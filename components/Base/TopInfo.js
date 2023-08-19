@@ -31,9 +31,9 @@ const TopInfo = () => {
    <span className='flex items-center gap-3 font-poppins min-[320px]:text-[0.9rem] xl:text-[1.2rem]  lg:text-[1rem] cursor-pointer ' onClick={handleEmailClick}><FaEnvelope className='text-mainRed' /> {websiteData.contactInfo.email[0]} </span>
    </div>
     <div className='flex items-center gap-2 max-[767px]:text-[1.2rem] lg:text-[1.2rem]  xl:text-[1.2rem]'>
-    <span className='p-2 rounded text-mainRed bg-white hover:bg-mainRed hover:text-white cursor-pointer' onClick={()=>handleWhatsAppClick()} ><FaWhatsapp /></span>
-    <span className='p-2 rounded text-mainRed bg-white hover:bg-mainRed hover:text-white cursor-pointer' onClick={handleInsta} ><FaFacebook/></span>
-    <span className='p-2 rounded text-mainRed bg-white hover:bg-mainRed hover:text-white cursor-pointer' onClick={handleInsta}><FaInstagram/></span>
+    <span className='p-2 rounded-full text-mainRed bg-white hover:bg-mainRed hover:text-white cursor-pointer' onClick={()=>handleWhatsAppClick()} ><FaWhatsapp /></span>
+    <span className='p-2 rounded-full text-mainRed bg-white hover:bg-mainRed hover:text-white cursor-pointer' onClick={handleInsta} ><FaFacebook/></span>
+    <span className='p-2 rounded-full text-mainRed bg-white hover:bg-mainRed hover:text-white cursor-pointer' onClick={handleInsta}><FaInstagram/></span>
 
     </div>
     </div>

@@ -27,6 +27,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          "footerBg":"linear-gradient(90deg, rgba(14,21,89,1) 16%, rgba(6,11,61,1) 39%, rgba(15,5,45,1) 92%)",
       },
       boxShadow:{
         headerShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",

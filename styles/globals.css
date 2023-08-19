@@ -10,7 +10,14 @@
 .childNav ul{
 display: none;
 }
+body{
+    overflow-x: hidden;
+}
 .childNav:hover ul{
     display: block;
+    background-color: #0c134f48;
 }
-
+.ourProducts .slick-track{
+    display: flex !important;
+    gap: 10px !important;
+}

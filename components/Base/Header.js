@@ -4,7 +4,9 @@ import { FaSearch,FaBars, FaMinus } from 'react-icons/fa'
 import {FiPlus} from "react-icons/fi"
 import {LiaAngleRightSolid} from "react-icons/lia"
 import { Button, Drawer } from 'antd';
-const Header = () => {
+import Image from 'next/image';
+import { websiteData } from '@/public/constantData';
+const Header = ({fixed}) => {
   const [open, setOpen] = useState(false);
   const[mobileheaderChildShow,setMobileHeaderChildShow]=useState({
     Product:false,
@@ -149,16 +151,16 @@ const Header = () => {
   }
 
   return (
-  <div className='px-[5%] shadow-headerShadow h-[60px] flex items-center justify-center'>
+  <div className='px-[5%] transition-all duration-500 shadow-headerShadow h-[60px] flex items-center justify-center z-[1000] bg-white w-full' style={{position:fixed?"fixed":"relative",top:fixed?"0px":null}}>
 <div className='flex items-center justify-between w-full'>
-<div className='text-[1.6rem] font-heading font-medium text-dark-cl'>
-Maruti Steel Alloys
+<div className='text-[1.6rem] h-full font-heading font-medium text-dark-cl'>
+<Image className='h-[50px]' src={websiteData.logo} alt={websiteData.name} width={200} height={70}/>
 </div>
 <div className='flex items-center gap-5'>
-<ul className='hidden items-center justify-center gap-5 md:flex'>
+<ul className='hidden items-center justify-center gap-3 md:flex'>
 {
   data.map((item)=>{
-    return <li key={item.name}  className='text-[1.2rem] font-poppins font-medium rounded-md hover:text-dark-pink text-primary-clr h-[60px] px-2 flex items-center justify-center relative group'>
+    return <li key={item.name}  className='text-[1.1rem] font-poppins font-medium rounded-md hover:text-dark-pink text-primary-clr h-[60px] px-2 flex items-center justify-center relative group'>
     <Link href={item.link}>{item.name}</Link> {item.submenu?<FiPlus className='ml-[5px] cursor-pointer'/>:null}
 {
   item.submenu?<ul className='top-[60px] absolute w-fit bg-white shadow-boxshadow pt-2 border-t-2 border-blue-dark hidden group-hover:block'>
@@ -172,7 +174,7 @@ Maruti Steel Alloys
         each.submenu?<ul className='left-[101%] absolute top-[-2px] bg-white shadow-boxshadow border-t-2 border-blue-dark '>
         {
           each.submenu.map((every)=>{
-            return  <li key={every.name}  className='text-[1rem]  whitespace-nowrap h-[40px] px-5 hover:text-dark-pink text-primary-clr  border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative'><Link href={every.link}>{every.name}</Link></li>
+            return  <li key={every.name}  className='text-[1rem] bg-white whitespace-nowrap h-[40px] px-5 hover:text-dark-pink text-primary-clr  border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative'><Link href={every.link}>{every.name}</Link></li>
           })
         }
         </ul>:null
@@ -189,7 +191,7 @@ Maruti Steel Alloys
   })
 }
 </ul>
-<button className=' hidden h-[50px] bg-primary-clr text-white rounded-md px-3 text-[1.3rem] font-exo md:flex items-center justify-center'>Catalogue
+<button className=' hidden h-[40px] bg-primary-clr text-white rounded-md px-3 text-[1.2rem] font-exo md:flex items-center justify-center'>Catalogue
 </button>
 <div className='flex items-center gap-5'>
 <FaSearch className='text-[1.2rem] cursor-pointer'/>
