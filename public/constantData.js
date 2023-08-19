@@ -1,5 +1,5 @@
 export const websiteData={
-    name:"Marti Steel Alloys",
+    name:"Maruti Steel Alloys",
     logo:require("../public/Images/logo.png"),
     contactInfo:{
         mobileNo:["9769962083" ,"9328158053"],
