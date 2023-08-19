@@ -2,6 +2,7 @@ import React , { useState, useEffect }from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import TopInfo from './TopInfo'
+import ScrollTop from './ScrollTop'
 const Layout = ({children}) => {
   const [showTopBar, setShowTopBar] = useState(false);
   useEffect(() => {
@@ -32,6 +33,7 @@ const Layout = ({children}) => {
  
    {children}
    <Footer/>
+   <ScrollTop/>
    </div>
   )
 }

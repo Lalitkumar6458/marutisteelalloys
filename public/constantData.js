@@ -3,6 +3,7 @@ export const websiteData={
     logo:require("../public/Images/logo.png"),
     contactInfo:{
         mobileNo:["9769962083" ,"9328158053"],
+        contactPerson:["Mr.Bharat Modi"],
         email:["marutisteela@gmail.com"],
         address:["42, Devidas Mansion, 1st Carpenter Street, C.P. Tank, Mumbai- 400 004."]
     },

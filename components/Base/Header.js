@@ -128,11 +128,11 @@ const Header = ({fixed}) => {
     },
     {
       name:"Quality",
-      link:"/"
+      link:"/quality"
     },
     {
       name:"Contact",
-      link:"/"
+      link:"/contact"
     },
     {
       name:"Gallery",

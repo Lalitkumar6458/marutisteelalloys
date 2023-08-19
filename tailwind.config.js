@@ -11,7 +11,7 @@ module.exports = {
         "mainRed":"#5C469C",
        ' darkRed':"#981815",
        "dark-cl":"#0C134F",
-       "primary-clr":"#0C134F",
+       "primary-clr":"primary-clr",
        "pink":"#D4ADFC",
        "dark-pink":"#5C469C",
        "blue-dark":"#1D267D"
