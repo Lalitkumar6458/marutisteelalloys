@@ -71,7 +71,7 @@ const HeroSection = () => {
            return <div className='h-[calc(100vh-110px)] w-full bg-dark-cl relative flex items-center justify-center px-[5%]'>
            <div className=' w-full left-0 right-0 top-0 absolute h-full'>
            <Image className="h-full w-full object-cover" src={item.img} alt={item.text} width={1000} height={700} />
-           <div className=' w-full h-full  left-0 right-0 top-0 absolute bg-[#0c134f48] z-50 '></div>
+           <div className=' w-full h-full  left-0 right-0 top-0 absolute bg-[#0c134f13] z-50 '></div>
            </div>
            <div className='z-50 h-[calc(100vh-110px)] relative w-full flex items-start justify-center flex-col'>
 <h1 className='text-[2rem] md:text-[3rem] lg:text-[3.6rem] text-white font-Oswald font-medium' style={{textShadow:"3px 3px 6px black"}}>{item.text}</h1>

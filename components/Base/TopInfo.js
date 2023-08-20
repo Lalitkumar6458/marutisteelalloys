@@ -24,7 +24,7 @@ const TopInfo = () => {
     // window.open(url, '_blank');
   }
   return (
-    <div className='h-[50px] max-[767px]:h-[50px] w-full bg-dark-cl text-white flex items-center justify-between px-[5%] text-[1.3rem]'>
+    <div className='h-[50px] max-[767px]:h-[50px] w-full bg-footerBg text-white flex items-center justify-between px-[5%] text-[1.3rem]'>
    <div className='flex md:items-center justify-between md:w-[60%] max-[767px]:flex-col'>
    <span className='flex items-center gap-3 font-poppins min-[320px]:text-[0.9rem] xl:text-[1.2rem]  lg:text-[1rem] cursor-pointer ' onClick={handlePhoneClick}><FaPhone  className='text-mainRed' /> +91:{websiteData.contactInfo.mobileNo[0]}
    </span>

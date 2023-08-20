@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "mainRed":"#5C469C",
+        "mainRed":"#0066AA",
        ' darkRed':"#981815",
-       "dark-cl":"#0C134F",
+       "dark-cl":"#DA251C",
        "primary-clr":"primary-clr",
-       "pink":"#D4ADFC",
-       "dark-pink":"#5C469C",
-       "blue-dark":"#1D267D"
+       "pink":"#0293DF",
+       "dark-pink":"#0066AA",
+       "blue-dark":"#0066AA"
        },
        fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
@@ -27,7 +27,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          "footerBg":"linear-gradient(90deg, rgba(14,21,89,1) 16%, rgba(6,11,61,1) 39%, rgba(15,5,45,1) 92%)",
+          "footerBg":"linear-gradient(90deg, rgba(119,7,7,1) 16%, rgba(131,0,1,1) 48%, rgba(149,21,7,1) 92%)"
       },
       boxShadow:{
         headerShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px",

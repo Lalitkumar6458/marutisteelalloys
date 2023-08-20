@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
           {
             icon: <AiOutlineSafetyCertificate />,
             title: "ISO Certified Company ",
-            description: "Marti Steel Alloys is proud to hold an ISO certification, a testament to our adherence to international quality and management standards. This recognition reflects our commitment to delivering products of the highest caliber.",
+            description: "Maruti Steel Alloys is proud to hold an ISO certification, a testament to our adherence to international quality and management standards. This recognition reflects our commitment to delivering products of the highest caliber.",
           },
         ];
   return (

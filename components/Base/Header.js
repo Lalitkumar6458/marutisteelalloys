@@ -167,7 +167,7 @@ const Header = ({fixed}) => {
     return <li key={item.name}  className='text-[1.1rem] font-poppins font-medium rounded-md hover:text-dark-pink text-primary-clr h-[60px] px-2 flex items-center justify-center relative group'>
     <Link href={item.link}>{item.name}</Link> {item.submenu?<FiPlus className='ml-[5px] cursor-pointer'/>:null}
 {
-  item.submenu?<ul className='top-[60px] absolute w-fit bg-white shadow-boxshadow pt-2 border-t-2 border-blue-dark hidden group-hover:block'>
+  item.submenu?<ul className='top-[60px] absolute w-fit bg-white text-gray-900 shadow-boxshadow pt-2 border-t-2 border-blue-dark hidden group-hover:block'>
   {
     item.submenu.map((each)=>{
       return <li key={each.name} className='text-[1rem]  whitespace-nowrap hover:text-dark-pink text-primary-clr h-[40px] px-5 border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative childNav '><Link href={each.link}>{each.name}</Link>
@@ -175,7 +175,7 @@ const Header = ({fixed}) => {
       {each.submenu?<LiaAngleRightSolid/>:null}
 
       {
-        each.submenu?<ul className='left-[101%] absolute top-[-2px] bg-white shadow-boxshadow border-t-2 border-blue-dark '>
+        each.submenu?<ul className='left-[101%] absolute top-[-2px] bg-white text-gray-900 shadow-boxshadow border-t-2 border-blue-dark '>
         {
           each.submenu.map((every)=>{
             return  <li key={every.name}  className='text-[1rem] bg-white whitespace-nowrap h-[40px] px-5 hover:text-dark-pink text-primary-clr  border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative'><Link href={every.link}>{every.name}</Link></li>
@@ -195,7 +195,7 @@ const Header = ({fixed}) => {
   })
 }
 </ul>
-<button className=' hidden h-[40px] bg-primary-clr text-white rounded-md px-3 text-[1.2rem] font-exo md:flex items-center justify-center'>Catalogue
+<button className= ' hidden h-[40px] bg-dark-cl text-white rounded-md px-3 text-[1.2rem] font-exo md:flex items-center justify-center'>Catalogue
 </button>
 <div className='flex items-center gap-5'>
 <FaSearch className='text-[1.2rem] cursor-pointer'/>
@@ -242,7 +242,7 @@ const Header = ({fixed}) => {
   </li>
 })}
 </ul>
-<button className='h-[50px] bg-primary-clr text-white rounded-md px-3 text-[1.3rem] font-exo md:flex items-center justify-center mt-4'>Catalogue
+<button className='h-[50px] bg-dark-cl text-white rounded-md px-3 text-[1.3rem] font-exo md:flex items-center justify-center mt-4'>Catalogue
 </button>
 </div>
 </Drawer>
