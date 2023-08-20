@@ -91,14 +91,14 @@ const OurProducts = () => {
             desc:"Dairy fittings are widely acclaimed for their exceptional durability, prolonged service life, ability to withstand stringent hygiene standards, and impeccable quality assurance. We offer an extensive range of dairy fitting types to cater to diverse industry demands.",
             img:require("../../public/Images/OurProduct/dairyImg.jpg"),
             link:""
-        },
-        {
-            id:6,
-            heading:"Stainless Steel Material",
-            desc:"Stainless steel, a fundamental raw material, encompasses a spectrum of forms including pipes, rods, round bars, sheets, plates, and wires, among others. Esteemed for its corrosion resistance, mechanical strength, and versatility, it serves as a cornerstone in diverse industrial applications.",
-            img:require("../../public/Images/OurProduct/img3.webp"),
-            link:""
-        },
+        }
+        // {
+        //     id:6,
+        //     heading:"Stainless Steel Material",
+        //     desc:"Stainless steel, a fundamental raw material, encompasses a spectrum of forms including pipes, rods, round bars, sheets, plates, and wires, among others. Esteemed for its corrosion resistance, mechanical strength, and versatility, it serves as a cornerstone in diverse industrial applications.",
+        //     img:require("../../public/Images/OurProduct/img3.webp"),
+        //     link:""
+        // },
       ]
   return (
    <div className='mt-[40px] mb-[40px] ourProducts px-[5%]'>

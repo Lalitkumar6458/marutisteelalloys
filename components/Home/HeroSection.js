@@ -50,15 +50,15 @@ const HeroSection = () => {
             img:require("../../public/Images/HomeImg/dairyFittingImg.webp"),
             
     
-        },
-        {
-            id:6,
-            text:<span>Unparalleled Stainless Steel Raw <br className='hidden md:block'/> Material Supplier</span>,
-            desc:"Experience a comprehensive range of top-tier stainless steel raw materials, including tubes, pipes, rods, flats, and more. Elevate your projects with our premium-grade materials, known for their durability and versatility.",
-            img:require("../../public/Images/HomeImg/buttweld-fittings.jpg"),
+        }
+        // {
+        //     id:6,
+        //     text:<span>Unparalleled Stainless Steel Raw <br className='hidden md:block'/> Material Supplier</span>,
+        //     desc:"Experience a comprehensive range of top-tier stainless steel raw materials, including tubes, pipes, rods, flats, and more. Elevate your projects with our premium-grade materials, known for their durability and versatility.",
+        //     img:require("../../public/Images/HomeImg/buttweld-fittings.jpg"),
           
     
-        },
+        // },
     
     ]
   return (
