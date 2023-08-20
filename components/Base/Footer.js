@@ -6,109 +6,101 @@ import {FaRss,FaFacebookF,FaTwitter,FaLinkedinIn,FaEnvelope,FaPhone,FaAngleDoubl
 const Footer = () => {
   const list1=[
     {
-        name:"SS,SMO 254 SCRAP",
-        link:'/'
+        name:"SS,904L ",
+        link:'/material/StainlessSteel'
     },
     {
-        name:"SS,ALLOYS 20 SCRAP",
-        link:'/'
+        name:"SS,310 ",
+        link:'/material/StainlessSteel'
     },
     {
-        name:"SS,904L SCRAP",
-        link:'/'
+        name:"SS,316L ",
+        link:'/material/StainlessSteel'
     },
     {
-        name:"SS,310 SCRAP",
-        link:'/'
+        name:"SS,304L ",
+        link:'/material/StainlessSteel'
     },
     {
-        name:"SS,316L SCRAP",
-        link:'/'
+        name:"SS,321 ",
+        link:'/material/StainlessSteel'
     },
     {
-        name:"SS,304L SCRAP",
-        link:'/'
-    },
-    {
-        name:"SS,321 SCRAP",
-        link:'/'
-    },
-    {
-        name:"SS,347 SCRAP",
-        link:'/'
+        name:"SS,347 ",
+        link:'/material/StainlessSteel'
     }
    
 ]
 const list2=[
   {
     name:"Pipe",
-    link:""
+    link:"/product/pipe"
   },
   {
     name:"Tubes",
-    link:""
+    link:"/product/tubes"
   },
   {
     name:"Pipe Fittings",
-    link:""
+    link:"/product/pipeFettings"
   },
   {
     name:"Flanges",
-    link:""
+    link:"/product/flanges"
   },
   {
     name:"Fasteners",
-    link:""
+    link:"/product/fasteners"
   },
   {
     name:"Sheet & Plate",
-    link:""
+    link:"/product/SheetAndPlate"
   },
   {
     name:"COILS & STIRPS",
-    link:""
+    link:"/product/CoilsAndStirps"
   },
   {
     name:"Valves",
-    link:""
+    link:"/product/valves"
   }
 ]
 const list3=[
   {
     name:"Inconel Alloys",
-    link:"",
+    link:"/material/alloys/InconelAlloys",
   },
   {
     name:"Monel Alloys",
-    link:"",
+    link:"/material/alloys/MonelAlloys",
   },
   {
     name:"Hastelloy",
-    link:"",
+    link:"/material/alloys/Hastelloy",
   },
   {
     name:"Duplex Alloys",
-    link:"",
+    link:"/material/alloys/DuplexAlloys",
   },
   {
     name:"Super Duplex Alloys",
-    link:"",
+    link:"/material/alloys/SuperDuplexAlloys",
   },
   {
     name:"Cupro Nickel Alloys",
-    link:"",
+    link:"/material/alloys/CuproNickelAlloys",
   },
   {
     name:"SMO 254",
-    link:"",
+    link:"/material/alloys/SMO254",
   },
   {
     name:"Alloy 20",
-    link:"",
+    link:"/material/alloys/Alloy20",
   },
   {
     name:"Titanium",
-    link:"",
+    link:"/material/alloys/Titanium",
   },
 ]
  const handleEmailClick = () => {
@@ -219,8 +211,8 @@ const list3=[
    <Link href="/about" className='hover:text-mainRed'>About Us</Link>
   |
 
-   <Link href="/" className='hover:text-mainRed'>Products</Link>|
-   <Link href="/" className='hover:text-mainRed'>Quality</Link>|
+   <Link href="/product" className='hover:text-mainRed'>Products</Link>|
+   <Link href="/quality" className='hover:text-mainRed'>Quality</Link>|
    <Link href="/contact" className='hover:text-mainRed'>Contact Us</Link>
 
    </div>

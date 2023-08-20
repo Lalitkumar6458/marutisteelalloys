@@ -62,35 +62,42 @@ const OurProducts = () => {
             heading:"Pipe Fittings",
             desc:"Pipe fittings stand as one of the most extensively employed equipment in the plumbing, shipbuilding, and piping sectors, playing a pivotal role in various applications.",
             img:require("../../public/Images/OurProduct/img3.webp"),
-            link:""
+            link:"/product/pipeFettings"
         },
+        {
+          id:6,
+          heading:"Tubes",
+          desc:"Our Tubes are precisely engineered to cater to a wide range of applications in industries such as shipbuilding, power plants, and Tubing, meeting the specific needs of each sector.",
+          img:require("../../public/Images/product/img7.jpeg"),
+          link:"/product/tubes"
+      },
         {
             id:2,
             heading:"Flange",
             desc:"Renowned for their exceptional durability, extended lifespan, high-pressure resistance, and flawless quality, our flanges boast a flawless track record. We offer a comprehensive range of flange types to meet diverse needs.",
             img:require("../../public/Images/OurProduct/img7.jpg"),
-            link:""
+            link:"/product/flanges"
         },
         {
             id:3,
-            heading:"Pipe & Tubes",
+            heading:"Pipe",
             desc:"Our Pipe & Tubes are precisely engineered to cater to a wide range of applications in industries such as shipbuilding, power plants, and piping, meeting the specific needs of each sector.",
             img:require("../../public/Images/OurProduct/stainless-steel-pipe-500x500.jpg"),
-            link:""
+            link:"/product/pipe"
         },
         {
             id:4,
             heading:"Fasteners",
             desc:"Our fasteners are celebrated for their remarkable durability, extended lifespan, capacity to endure high pressures, and impeccable quality assurance. We provide a complete spectrum of fastener types to accommodate a wide array of requirements.",
             img:require("../../public/Images/OurProduct/Fimg1.jpg"),
-            link:""
+            link:"/product/fasteners"
         },
         {
             id:5,
             heading:"Dairy Fittings",
             desc:"Dairy fittings are widely acclaimed for their exceptional durability, prolonged service life, ability to withstand stringent hygiene standards, and impeccable quality assurance. We offer an extensive range of dairy fitting types to cater to diverse industry demands.",
             img:require("../../public/Images/OurProduct/dairyImg.jpg"),
-            link:""
+            link:"/product/dairyFetting"
         }
         // {
         //     id:6,

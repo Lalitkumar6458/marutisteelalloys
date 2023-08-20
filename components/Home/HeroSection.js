@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { Carousel } from 'antd';
 import Image from 'next/image';
 import Bottons from '../SmallComponents/Bottons';
+import Link from 'next/link';
 
 const HeroSection = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -76,8 +77,12 @@ const HeroSection = () => {
 <h1 className='text-[2rem] md:text-[3rem] lg:text-[3.6rem] text-white font-Oswald font-medium' style={{textShadow:"3px 3px 6px black"}}>{item.text}</h1>
 <p className='w-[95%] md:w-[80%]  lg:w-[50%] text-left text-white text-[1rem] md:text-[1.2rem] border-l-2 border-dark-cl pl-5 font-Roboto font-medium' style={{textShadow:"3px 3px 6px black"}}>{item.desc}</p>
 <div className='mt-5 flex gap-3'>
+<Link href="/product">
 <button className='bg-dark-cl text-white h-[50px] px-4 rounded font-poppins font-medium'>Know More</button>
+</Link>
+<Link href="/contact">
 <button className='text-dark-cl bg-white h-[50px] px-4 border border-dark-cl  rounded font-poppins font-medium'>Inquiry Now</button>
+</Link>
 
 </div>
            </div>
