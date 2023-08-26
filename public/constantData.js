@@ -163,7 +163,7 @@ export const CountriesData={
     
 }
 export const applicationsData={
-    img:"",
+    img:require("./Images/ProductMain/applicationImg.png"),
     listdata:[
         "Used in the Petrochemical Industry.",
 "Used in the Oil and Gas Industry.",
@@ -452,7 +452,7 @@ export const SheetPlateData = {
 }
 
 export const CoilsStripData = {
-    name: "SHEET & PLATE",
+    name: "COIL & STRIP",
     img: require("./Images/ProductMain/Flange/orifice-flange.webp"),
     text1: "We ensure secure transportation of Coils & Strips through effective packaging, employing wooden cases or crates to safeguard against external damage. Our dedicated inspection and testing team meticulously evaluates these stainless steel coils on diverse parameters, assuring the quality and integrity of the final product. Additionally, independent examination is conducted to further validate the product's specifications.",
     text2: "Our commitment to quality is demonstrated through our provision of annealed coils, accompanied by standard test certifications. Furthermore, this product undergoes reinforcement through evaluations conducted by accredited organizations and private laboratory testing. This rigorous approach ensures that our stainless steel coils meet the highest industry standards and exceed expectations.",

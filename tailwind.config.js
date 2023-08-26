@@ -21,7 +21,8 @@ module.exports = {
         'Oswald':[ 'Oswald','sans-serif'],
         'Roboto':['Roboto',' sans-serif'],
         'exo':['Exo 2', 'sans-serif'],
-        'heading':['Aclonica', 'sans-serif']
+        'heading':['Aclonica', 'sans-serif'],
+        'text-font':['Nunito Sans', 'sans-serf']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
