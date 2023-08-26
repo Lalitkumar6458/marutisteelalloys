@@ -7,8 +7,8 @@ const AboutHome = () => {
   return (
     <div className='w-full pt-[20px] px-[5%] '>
     <div className='text-center' >
-    <h4 className='text-[1.2rem] text-dark-cl font-Roboto font-medium'>WELCOME TO</h4>
-    <h5 className='text-[2rem] font-Oswald font-semibold'>{websiteData.name}</h5>
+    <h4 className='text-[1.2rem] text-mainRed font-Roboto font-medium'>WELCOME TO</h4>
+    <h5 className='text-[2rem] font-Oswald font-semibold text-dark-cl'>{websiteData.name}</h5>
     <div className='w-[70px] h-1 bg-mainRed rounded mt-2 mx-auto'></div>
     </div>
 
