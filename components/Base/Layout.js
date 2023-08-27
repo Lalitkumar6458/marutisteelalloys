@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import TopInfo from './TopInfo'
 import ScrollTop from './ScrollTop'
+import Whatsappbtn from './Whatsappbtn'
 const Layout = ({children}) => {
   const [showTopBar, setShowTopBar] = useState(false);
   useEffect(() => {
@@ -34,6 +35,7 @@ const Layout = ({children}) => {
    {children}
    <Footer/>
    <ScrollTop/>
+   <Whatsappbtn/>
    </div>
   )
 }
