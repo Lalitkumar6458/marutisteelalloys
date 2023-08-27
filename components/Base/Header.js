@@ -171,7 +171,7 @@ const Header = ({fixed}) => {
     return <li key={item.name}  className='text-[1.1rem] font-poppins font-medium rounded-md hover:text-dark-pink text-primary-clr h-[60px] px-2 flex items-center justify-center relative group'>
     <Link href={item.link}>{item.name}</Link> {item.submenu?<FiPlus className='ml-[5px] cursor-pointer'/>:null}
 {
-  item.submenu?<ul className='top-[60px] absolute w-fit bg-white text-gray-900 shadow-boxshadow pt-2 border-t-2 border-blue-dark hidden group-hover:block'>
+  item.submenu?<ul className='top-[60px] absolute w-fit bg-white text-gray-900 shadow-boxshadow pt-2 border-t-2 border-dark-cl hidden group-hover:block'>
   {
     item.submenu.map((each)=>{
       return <li key={each.name} className='text-[1rem]  whitespace-nowrap hover:text-dark-pink text-primary-clr h-[40px] px-5 border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative childNav '><Link href={each.link}>{each.name}</Link>
