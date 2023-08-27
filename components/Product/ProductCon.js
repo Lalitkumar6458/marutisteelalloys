@@ -33,7 +33,7 @@ const GradeKey = Object.keys(GradeData.gardeData);
       </div>
       <div className="mt-4">
         <h1 className="text-[1.8rem] md:text-[2.3rem] font-Roboto font-semibold text-dark-cl">
-          {name} Supplier & Stockist in India - Excel Steels
+          {name} Supplier & Stockist in India - Maruti Steel Alloys
         </h1>
 
         <div className="">
