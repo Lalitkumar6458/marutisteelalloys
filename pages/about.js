@@ -8,43 +8,48 @@ import Image from 'next/image'
 import SectionHeading from '@/components/SmallComponents/SectionHeading'
 
 const about = () => {
-  const factSheet=[
+  const factSheet = [
     {
-      heading:"Nature of Business",
-      value:"Wholesale Trader Company"
+      heading: "Nature of Business",
+      value: "Wholesale Trader Company",
     },
     {
-      heading:"Company CEO",
-      value:"MR. BHARAT MODI"
+      heading: "Company CEO",
+      value: "MR. BHARAT MODI",
     },
     {
-      heading:"Total Number of Employees",
-      value:"Upto 10 People"
+      heading: "Total Number of Employees",
+      value: "Upto 10 People",
     },
     {
-      heading:"Year of Establishment",
-      value:"2015"
+      heading: "Year of Establishment",
+      value: "2015",
     },
     {
-      heading:"Legal Status of Firm",
-      value:"Individual - Proprietor"
+      heading: "Legal Status of Firm",
+      value: "Individual - Proprietor",
     },
     {
-      heading:"Annual Turnover",
-      value:"Rs. 15-20 Crore"
+      heading: "Annual Turnover",
+      value: "Rs. 10-15 Crore",
     },
     {
-      heading:"GST No.",
-      value:"24CCPPK0810H1ZU"
+      heading: "Banker",
+      value: "KOTAK MAHINDRA BANK",
     },
     {
-      heading:"Payment Mode",
-      value:"Cash,Credit Card,DD,Cheque"},
-    {
-      heading:"Shipment Mode",
-      value:"By Road"
+      heading: "GST No.",
+      value: "27BREPG1665F1ZY",
     },
-  ]
+    {
+      heading: "Payment Mode",
+      value: "Cash,Credit Card,DD,Cheque",
+    },
+    {
+      heading: "Shipment Mode",
+      value: "By Road",
+    },
+  ];
   const OfferData=[{
 
     id:1,

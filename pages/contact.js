@@ -37,7 +37,7 @@ const contact = () => {
      <FaPhoneVolume className='p-[8px] text-[2.3rem] top-[-20px] absolute left-[50%] translate-x-[-50%] bg-dark-pink text-white rounded'/>
     <h2 className='mt-2 text-[1.5rem] font-poppins font-semibold text-dark-cl'>Office No</h2>
     <div className='flex items-center flex-col h-[80px] justify-center'>
-    <p className='text-[1rem] font-Roboto font-medium mt-1'>+91 22 6678 4944</p>
+    <p className='text-[1rem] font-Roboto font-medium mt-1'>+91 {websiteData.contactInfo.officeNo[0]}</p>
     </div>
     </div>
     <div className='shadow-boxshadow flex flex-col items-center justify-center p-3 relative'>

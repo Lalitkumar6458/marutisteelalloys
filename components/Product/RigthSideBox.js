@@ -189,7 +189,7 @@ const RigthSideBox = ({ pathname }) => {
               </h5>
               <p className="flex gap-2 items-center mt-1 font-poppins text-[1rem] font-normal">
                 <LiaPhoneVolumeSolid />
-                +91 {websiteData.contactInfo.mobileNo[0]}
+                +91 {websiteData.contactInfo.officeNo[0]}
               </p>
             </div>
           </div>
