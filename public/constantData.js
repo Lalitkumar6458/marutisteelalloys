@@ -62,7 +62,11 @@ export const GradeData = {
 }
 
 export const CitiesData = {
-    text: "Maruti Steel Alloys ranks among India's premier suppliers, exporters, and stockists of pipes, celebrated for their reliability and performance. Typically, we export three containers of pipes monthly to various Indian ports, catering to a diverse clientele. Our pipe distribution spans key cities including Mumbai, Chennai, Surat, New Delhi, Bangalore, and others, cementing our market presence.",
+    text: function(name){
+      return `
+      Maruti Steel Alloys ranks among India's premier suppliers, exporters, and stockists of ${name}, celebrated for their reliability and performance. Typically, we export three containers of ${name} monthly to various Indian ports, catering to a diverse clientele. Our ${name} distribution spans key cities including Mumbai, Chennai, Surat, New Delhi, Bangalore, and others, cementing our market presence.
+      `;
+    },
     listData: [
         "Bengaluru",
         "Chennai",
@@ -133,7 +137,10 @@ export const CitiesData = {
     ]
 }
 export const CountriesData={
-    text:"Maruti Steel Alloys pipes find their way to the United Arab Emirates, various European nations, Africa, Asia, and every corner of the globe. Our reach extends far and wide, serving an ever-growing clientele that spans numerous countries on a monthly basis. Presently, we venture into new regions and ports, exporting a significant five containers of pipes. Our legacy as India's premier pipe suppliers is one of sustained dominance, shaping the market for generations.",
+    text:function(name){
+      return `
+      Maruti Steel Alloys ${name} find their way to the United Arab Emirates, various European nations, Africa, Asia, and every corner of the globe. Our reach extends far and wide, serving an ever-growing clientele that spans numerous countries on a monthly basis. Presently, we venture into new regions and ports, exporting a significant five containers of ${name}. Our legacy as India's premier ${name} suppliers is one of sustained dominance, shaping the market for generations.`;
+    },
     listData:[
         "Saudi Arabia",
         "Oman",
@@ -474,26 +481,25 @@ export const CoilsStripData = {
     gradesTable:true
 }
 
-export const pipeFittingDat={
-
-type:[
+export const pipeFittingDat = {
+  type: [
     {
-       name: "Buttweld Pipe Fittings",
-       img:require("./Images/PipeFitting/Img1.webp"),
-        link:"/Buttweld_Pipe_Fittings",
-       desc:""
+      name: "Buttweld Pipe Fittings",
+      img: require("./Images/PipeFitting/Img1.webp"),
+      link: "/product/pipeFettings/Buttweld_Pipe_Fittings",
+      desc: "",
     },
-     {
-       name: "Threaded Pipe Fittings",
-       img:require("./Images/PipeFitting/Bgimg2.jpg"),
-        link:"/Threaded_Pipe_Fittings",
-       desc:""
+    {
+      name: "Threaded Pipe Fittings",
+      img: require("./Images/PipeFitting/Bgimg2.jpg"),
+      link: "/product/pipeFettings/Threaded_Pipe_Fittings",
+      desc: "",
     },
-     {
-       name: "Socket Weld Fittings",
-       img:require("./Images/PipeFitting/Bgimg1.jpg"),
-        link:"/Socket_Pipe_Fittings",
-       desc:""
+    {
+      name: "Socket Weld Fittings",
+      img: require("./Images/PipeFitting/Bgimg1.jpg"),
+      link: "/product/pipeFettings/Socket_Pipe_Fittings",
+      desc: "",
     },
     //  {
     //    name: "Olets Fittings",
@@ -507,11 +513,8 @@ type:[
     //    link:"/Ferrule_Pipe_Fittings",
     //    desc:""
     // },
-
-]
-
-
-}
+  ],
+};
 
 export const ButtweldWeldPipeFittingsData={
 

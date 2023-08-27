@@ -13,12 +13,12 @@ const Application = ({name}) => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-start">
           <ul>
             {applicationsData.listdata.map((item) => {
               return (
                 <li
-                  className="text-[1.3rem] font-poppins mb-3 flex items-center gap-2"
+                  className="text-[1rem] md:text-[1.3rem] font-poppins mb-3 flex items-center gap-2"
                   key={item}
                 >
                   <BiArrowFromLeft />

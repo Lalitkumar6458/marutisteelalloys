@@ -16,7 +16,7 @@ const SupplierCountries = ({ name }) => {
         </h3>
       </div>
 
-      <p className=" font-poppins text-[1.1rem] mt-8">{CountriesData.text}</p>
+      <p className=" font-poppins text-[1.1rem] mt-8">{CountriesData.text(name)}</p>
       <div className=" overflow-auto">
         <table className="border-collapse border w-full mt-9">
           <thead>

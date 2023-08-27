@@ -14,8 +14,9 @@ import Application from './Application'
 import SupplierCities from './SupplierCities'
 import SupplierCountries from './SupplierCountries';
 
-const ProductCon = () => {
-    const data = ValvesData;
+const ProductCon = ({data,name}) => {
+    console.log(name,"name")
+   
 const SpecificationsKey = Object.keys(data.Specifications);
 const GradeKey = Object.keys(GradeData.gardeData);
 
@@ -23,7 +24,7 @@ const GradeKey = Object.keys(GradeData.gardeData);
     <div className="">
       <div className="w-full h-[400px] p-1 border rounded-md overflow-hidden">
         <Image
-          className="w-full h-full object-cover hover:scale-110 transition-all duration-700 ease-in-out rounded-md"
+          className="w-full h-full object-fill hover:scale-110 transition-all duration-700 ease-in-out rounded-md"
           src={data.img}
           alt={data.name}
           width={700}
@@ -32,26 +33,26 @@ const GradeKey = Object.keys(GradeData.gardeData);
       </div>
       <div className="mt-4">
         <h1 className="text-[1.8rem] md:text-[2.3rem] font-Roboto font-semibold text-dark-cl">
-          Pipe Supplier & Stockist in India - Excel Steels
+          {name} Supplier & Stockist in India - Excel Steels
         </h1>
 
         <div className="">
-          <p className="text-[1rem] md:text-[1.5rem] font-poppins font-normal my-5">
+          <p className="text-[1rem] md:text-[1.1rem] font-poppins font-normal my-5">
             {data.text1}
           </p>
           <h2 className="text-[1.4rem]  md:text-[2rem] font-Roboto font-semibold text-dark-cl">
             {data.heading}
           </h2>
-          <p className="text-[1rem] md:text-[1.5rem] font-poppins font-normal my-5">
+          <p className="text-[1rem] md:text-[1.1rem] font-poppins font-normal my-5">
             {data.text2}
           </p>
-          <p className="text-[1rem] md:text-[1.5rem] font-poppins font-normal my-5">
+          <p className="text-[1rem] md:text-[1.1rem] font-poppins font-normal my-5">
             {data.text3}
           </p>
 
           <div className=" border-b border-gray-500">
             <h3 className="text-[1.6rem] md:text-[2rem] font-Roboto font-semibold border-b-2 border-mainRed w-fit text-dark-cl">
-              Specifications - Pipe
+              Specifications - { name }
             </h3>
           </div>
           <div className="mt-3 ">
@@ -60,7 +61,7 @@ const GradeKey = Object.keys(GradeData.gardeData);
                 <thead>
                   <tr className="bg-gray-600 text-white">
                     <th className="w-[20%] text-center border text-[1rem] md:text-[1.2rem] font-Roboto rounded-l">
-                      Pipes
+                      {name}
                     </th>
                     <th className="w-[80%] text-center border text-[1rem] md:text-[1.2rem] font-Roboto rounded-r">
                       Specifications
@@ -112,7 +113,7 @@ const GradeKey = Object.keys(GradeData.gardeData);
           </div>
           <div className=" border-b border-gray-500 mt-[40px]">
             <h3 className="text-[1.6rem] md:text-[2rem] font-Roboto font-semibold border-b-2 border-mainRed w-fit text-dark-cl">
-              Types - Pipe
+              Types - {name}
             </h3>
           </div>
 
@@ -142,9 +143,9 @@ const GradeKey = Object.keys(GradeData.gardeData);
               })}
             </div>
           </div>
-          <Application name="Pipes" />
-          <SupplierCities name="Pipes" />
-          <SupplierCountries name="Pipes" />
+          <Application name={name} />
+          <SupplierCities name={name} />
+          <SupplierCountries name={name} />
         </div>
       </div>
     </div>
