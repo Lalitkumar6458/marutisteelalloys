@@ -987,7 +987,7 @@ export const SpecialAlloysgrade = [
   {
     id: 3,
     heading: "Hastelloy",
-    link:"/SpecialAlloys/Hastelloy",
+    link: "/SpecialAlloys/Hastelloy",
     data: {
       text1:
         "Highly Acclaimed Hastelloy C276 / Hastelloy C22 Supplier in India ,Hastelloy Round Bars & Wires, Hastelloy Pipes & Tubes, Hastelloy Sheets & Plates, Hastelloy Fasteners, Hastelloy Flanges & Hastelloy Pipe Fittings Stockiest & Exporters in India",
@@ -997,7 +997,8 @@ export const SpecialAlloysgrade = [
         "We manufacture Hastelloy Pipes & Tubes which tend to exhibit considerable resistance towards all kinds of pitting and cracking. Chemical mechanisms deploy our Hastelloy Flanges as they have the ability to combat oxidation. Hastelloy Pipe Fittings are tough and durable even in chemically inert atmospheres and vacuum. Hastelloy Fasteners can successfully function under medium to high temperature ranges.",
       text4:
         "Our Hastelloy Tube Fittings have their own special purpose utilizations in Chemical reactors and Nuclear reactors. Hastelloy Sheets & Plates have wide variety of applications in Petrochemical and Chemical Processing industries. Our Hastelloy Round Bars are employed in heat exchangers and pressure vessels.",
-    },grade: [],
+    },
+    grade: [],
     products: [
       "Hastelloy C276 & C22 Pipes",
       "Hastelloy C276 & C22 Tubes",
@@ -1014,7 +1015,7 @@ export const SpecialAlloysgrade = [
   {
     id: 4,
     heading: "Duplex Alloys",
-    link:"/SpecialAlloys/DuplexAlloys",
+    link: "/SpecialAlloys/DuplexAlloys",
     data: {
       text1:
         "Top Duplex Steel 2205 / Duplex Steel 2304  Supplier in India,Duplex Steel Round Bars & Rods, Duplex Steel Pipes & Tubes, Duplex Steel Sheets & Plates, Duplex Steel Fasteners, Duplex Steel Flanges & Duplex Steel Pipe Fittings Stockiest & Exporters in India",
@@ -1024,7 +1025,8 @@ export const SpecialAlloysgrade = [
         "Compared to other flanges and fasteners, Duplex Steel Flanges and Duplex Steel Fasteners are two times tough and strong. We boost up our Duplex Steel Pipes & Tubes by adding small quantities of nitrogen, chromium, and molybdenum. Duplex Steel Pipe Fittings are invulnerable to chloride pitting and crevice corrosion.",
       text4:
         "Compared to other flanges and fasteners, Duplex Steel Flanges and Duplex Steel Fasteners are two times tough and strong. We boost up our Duplex Steel Pipes & Tubes by adding small quantities of nitrogen, chromium, and molybdenum. Duplex Steel Pipe Fittings are invulnerable to chloride pitting and crevice corrosion.",
-    },grade: [],
+    },
+    grade: [],
     products: [
       " Duplex 2205 & 2304 Pipes",
       "Duplex 2205 & 2304 Tubes",
@@ -1051,7 +1053,8 @@ export const SpecialAlloysgrade = [
         "Our products like Super Duplex Steel S32750 and Super Duplex Steel S32760 have wide variety of industrial applications for their exemplary features. Due to the exceptional physical properties of our Super Duplex Round Bars and Super Duplex Flanges, they are employed in marine and oil & gas industries.",
       text4:
         "On the other hand, our Super Duplex Steel Pipes & Tubes have special utilizations in petrochemical and mining industries. Our Super Duplex Steel Fasteners and Super Duplex Steel Pipe Fittings are durable and ductile. We use high quality raw material to manufacture Super Duplex Steel Sheets & Plates. Our eminent team is always reachable to respond to your queries. Contact us today; we have all the products readily available in the stock. ",
-    },grade: [],
+    },
+    grade: [],
     products: [
       "Super Duplex S32750 & S32760 Pipes",
       "Super Duplex S32750 & S32760  Tubes",
@@ -1078,7 +1081,8 @@ export const SpecialAlloysgrade = [
         "For the exquisite features of our Cupro Nickel (Cu-Ni) 90/10 and Cupro Nickel (Cu-Ni) 70/30 they are deployed in shipbuilding and power generation. Our Cupro Nickel 70/30 Pipes & Tubes are used in marine environment for their exemplary pitting and corrosion resistance. We manufacture Cupro Nickel Flanges that have the ability to combat all types of corrosions in seawater.",
       text4:
         "Our Copper Nickel Fasteners and Copper Nickel Pipe Fittings are implemented in marine hardware, piping, and condensers & exchangers in seawater equipment. Copper Nickel Tube Fittings are deployed in high pressure systems and condensers in the Seawater system design. Cu-Ni 90/10 Round Bars and Cu-Ni 70/30 Sheets & Plates are used in evaporator tubing and brine heaters. Please give us a call today for your all copper nickel product requirement! ",
-    },grade: [],
+    },
+    grade: [],
     products: [
       "Cupro Nickel 70/30 & 90/10 Pipes",
       "Cupro Nickel 70/30 & 90/10 Tubes",
@@ -1105,7 +1109,8 @@ export const SpecialAlloysgrade = [
         "While fabricating our SMO 254 Pipe Fittings, we perform the annealing process by heating the material at greater temperatures and then water quenching them. Proper measures are taken while hot working and cold working in the manufacturing process of SMO 254 Fasteners.",
       text4:
         "Our SMO 254 Tube Fittings have wide variety of applications in petroleum production. SMO 254 Round Bars are equipped in chemical and food processing industries. On the other hand, SMO 254 Plates and SMO 254 Sheets are employed in desalination and flue-gas cleaning purposes. Please contact us to request a free quote or to speak with one of our experts on SMO 254 products!",
-    },grade: [],
+    },
+    grade: [],
     products: [
       "SMO 254 & UNS S31254 Pipes",
       "SMO 254 & UNS S31254 Tubes",
@@ -1132,7 +1137,8 @@ export const SpecialAlloysgrade = [
         "Our Alloy 20 Pipes & Tubes exhibit exceptional properties like resistance towards crevice corrosion and harmful chemicals like phosphoric, chlorides, sulphuric, and nitric acids. We enhance our Alloy 20 Flanges with small quantities of niobium which helps them to combat intergranular corrosion and sensitization.",
       text4:
         "Alloy 20 Fasteners are used in synthetic manufacturing machinery. Our Alloy 20 Pipe Fittings have wide range of applications in production of dye and food. Alloy 20 Tube fittings are deployed in petrochemical process systems and bubble caps. Our Alloy 20 Round Bars are adapted in reactor vessels and chemical piping systems. Alloy 20 Sheets and Alloy 20 Plates are employed in the manufacturing process of pumps and valves.",
-    },grade: [],
+    },
+    grade: [],
     products: [
       "Alloy 20 & UNS N08020,20 WNR 2.4660 Pipes",
       "Alloy 20 & UNS N08020,20 WNR 2.4660 Tubes",
@@ -1156,7 +1162,7 @@ export const SpecialAlloysgrade = [
       text2:
         "Titanium shows a long working life and the ability to work extremely high to low-temperature fluctuations. Furthermore, our team of quality experts ensures the capacity of the finished product to withstand various wokr conditions. ",
       text3:
-        "Modi Metals is a famous organization that has gained a preeminent position as a supplier, wholesaler, and exporter of Titanium in all Grade. Our company has owned a team of specialists who assist us in producing a broad range of Titanium products. We choose a superior quality of Titanium in all Grade , which is soft and malleable. Besides, the grade offers the greatest formability. We choose unalloyed Titanium grade, which offers outstanding corrosion resistance abilities, weldability and useful in various applications. The material is largely applied in marine and chemical industries. The selected material grade holds the capacity to sustain in harsh environments for a longer time. Titanium is also useful in the fabrication of anode materials to carry out cathode operations.",
+        "Maruti Steel Alloys is a famous organization that has gained a preeminent position as a supplier, wholesaler, and exporter of Titanium in all Grade. Our company has owned a team of specialists who assist us in producing a broad range of Titanium products. We choose a superior quality of Titanium in all Grade , which is soft and malleable. Besides, the grade offers the greatest formability. We choose unalloyed Titanium grade, which offers outstanding corrosion resistance abilities, weldability and useful in various applications. The material is largely applied in marine and chemical industries. The selected material grade holds the capacity to sustain in harsh environments for a longer time. Titanium is also useful in the fabrication of anode materials to carry out cathode operations.",
       text4:
         " we strive to go with the latest industrial trends and use modular production procedures and test tools. We aim to make our products popular in the market, and for that, we work hard. To maintain quality standards, we are strictly bound to follow globally accepted and industrially suitable standards for titanium all grades ",
     },
@@ -1166,7 +1172,6 @@ export const SpecialAlloysgrade = [
       "Titanium Grade.5",
       "Titanium Grade.7",
       "Titanium Grade.11",
-    
     ],
     products: [
       "Titanium In Gr.2,5,7,11 Pipes",
