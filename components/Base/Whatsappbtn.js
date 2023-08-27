@@ -11,7 +11,7 @@ const Whatsappbtn = () => {
       };
   return (
     <div
-      className="fixed bottom-4 left-4 cursor-pointer p-1 bg-white shadow-iconShadow rounded-full"
+      className="fixed bottom-4 left-4 cursor-pointer p-1 bg-white shadow-iconShadow rounded-full z-50"
       onClick={handleWhatsAppClick}
     >
       <Image

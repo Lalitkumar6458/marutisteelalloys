@@ -441,7 +441,7 @@ export const GasketData = {
 
 export const SheetPlateData = {
     name: "SHEET & PLATE",
-    img: require("./Images/ProductMain/Flange/orifice-flange.webp"),
+    img: require("./Images/ProductMain/Stainless-Steel-Sheet---Plate.jpg"),
     text1: "Maruti Steel Alloys stands as a premier supplier and exporter of exceptional stainless steel sheets and plates, ranging in thickness from 0.3mm to 120mm. Our products have found extensive applications across various industries. Additionally, we specialize in nickel and copper alloys, stainless and duplex steel, as well as carbon and alloy steel materials, all of which are employed in the fabrication of our sheets and plates.",
     text2: "We are committed to providing our clients with an extensive selection of Sheets and Coils, available in various specifications to suit their unique needs. Catering to diverse industries, our range is renowned for its exceptional corrosion resistance, durability, and high structural integrity.",
     text3: "We offer our clients premium Plates crafted from high-grade stainless steel. These plates cater to the distinct requirements of various industries and are recognized for their attributes such as exceptional flexibility, corrosion resistance, and extended longevity. Furthermore, we possess the capability to tailor our range according to the specific needs of our customers.",
@@ -461,7 +461,7 @@ export const SheetPlateData = {
 
 export const CoilsStripData = {
     name: "COIL & STRIP",
-    img: require("./Images/ProductMain/Flange/orifice-flange.webp"),
+    img: require("./Images/product/Bgimg1.png"),
     text1: "We ensure secure transportation of Coils & Strips through effective packaging, employing wooden cases or crates to safeguard against external damage. Our dedicated inspection and testing team meticulously evaluates these stainless steel coils on diverse parameters, assuring the quality and integrity of the final product. Additionally, independent examination is conducted to further validate the product's specifications.",
     text2: "Our commitment to quality is demonstrated through our provision of annealed coils, accompanied by standard test certifications. Furthermore, this product undergoes reinforcement through evaluations conducted by accredited organizations and private laboratory testing. This rigorous approach ensures that our stainless steel coils meet the highest industry standards and exceed expectations.",
     text3: "Our clientele benefits from our exceptional Coils & Strips crafted from high-grade stainless steel. These products are designed to meet the unique demands of diverse industries and are acclaimed for their outstanding attributes, including remarkable flexibility, corrosion resistance, and prolonged durability. Moreover, our adeptness in customization allows us to align our offerings precisely with the individual requirements of our valued customers.",
@@ -711,10 +711,85 @@ export const SocketWeldPipeFittingsData={
               },
     ]
 }
+export const DairyFittings={
+    
+  name: "Dairy Fittings",
+  img: require("./Images/ProductMain/dairyFittings/img.jpg"),
+  text1: "Maruti Steel Alloys is honored to stand as a foremost provider, exporter, and stockist of premium-grade dairy fittings within India. Our standing rests on our commitment to delivering unrivaled quality, as our dairy fittings have gained acclaim for their exceptional resistance to corrosion, remarkable durability, and heightened capacity to withstand extreme heat. These fittings find utility across a diverse array of industries, including Shipbuilding, Chemical, Aerospace, Power Plant, and Sugar Mills. Our comprehensive selection of proper dairy fittings is meticulously fashioned from forged carbon steel, stainless steel, and nickel alloy, all customized to impeccably align with your specific demands.",
+  text2: "Maruti Steel Alloys holds a preeminent stance as a supplier, dealer, and stockist of exceptional dairy fittings across India. Our dedication reflects in the breadth of our offerings, with dairy fittings encompassing an array of sizes, shapes, and grades meticulously tailored to diverse industrial requisites. Our distribution network is widespread, encompassing key Indian cities and spanning across more than twenty states, ensuring unfaltering availability. What sets us apart is the spectrum of grades we provide, which includes ASME B16.11, MSS SP 75, MSS SP 83, and MSS SP 95, further solidifying our standing as trailblazers in the industry.",
+  text3: "At Maruti Steel Alloys, each dairy fitting we supply conforms meticulously to both national and international quality benchmarks. In our unwavering commitment to quality assurance, our team of proficient experts meticulously subjects every fitting to rigorous testing procedures.",
+  heading:"T.C Fittings, Pharma Fittings, T.C CLAMP, PIPE HOLDER, CONICAL STRAINER Stockist in India.",
+  "Specifications": {
+      "Dairy Fittings Types": "T.C Fittings, Pharma Fittings, CONICAL STRAINER,CAP, Plain Tee, T.C CLAMP,REDUCER, PIPE HOLDER,T.C BEND,UNION.,SEAMLESS TEE",
+      Dimension:"ASME 16.11, MSS SP-79, 83, 95, 97, BS 3799",
+      Pressure:"3000LBS, 6000LBS, 9000LBS",
+      Size: '1/8"~4" (DN6~DN100)',
+      Standard:'ASTM / ASME SA 403 GR WP "S" / "W" / " WX" 304 , 304L, 304H, 304N, 304LN, 309, 310H, 316, 316H, 317, 317L, 321, 321H, 347, 347 H'
+  },
 
+  type: [
+    {
+      name:"T.C Fittings",
+      img:require('./Images/ProductMain/dairyFittings/tc fitting.jpg'),
+    },
+    {
+      name:"Pharma Fittings",
+      img:require('./Images/ProductMain/dairyFittings/pharma fitting.jpg'),
+    },
+      {
+          name:"CONICAL STRAINER",
+          img:require('./Images/ProductMain/dairyFittings/22Conical-Strainer.jpg'),
+            },
+            {
+              name:"CAP",
+              img:require('./Images/ProductMain/dairyFittings/SS-Pipe-Cap.jpg'),
+            },
+            {
+              name:"Plain Tee",
+              img:require('./Images/ProductMain/dairyFittings/Plain-Teee-150x150.jpg'),
+            },
+            {
+              name:"WYE LOOP",
+              img:require('./Images/ProductMain/dairyFittings/Wye-Loop-150x150.jpg'),
+            },
+            {
+              name:"T.C CLAMP",
+              img:require('./Images/ProductMain/dairyFittings/tc-clamp-500x500-1-150x150.jpg'),
+            },
+            {
+              name:"REDUCER",
+              img:require('./Images/ProductMain/dairyFittings/dairy-reducer-500x500-1-150x150.jpg'),
+            },
+            {
+              name:"PIPE HOLDER",
+              img:require('./Images/ProductMain/dairyFittings/dairy-pipe-holder-500x500-1-150x150.jpg'),
+            },
+            {
+              name:"PLAIN BEND",
+              img:require('./Images/ProductMain/dairyFittings/plain-bend-500x500-1-150x150.jpg'),
+            },
+            {
+              name:"J. BEND",
+              img:require('./Images/ProductMain/dairyFittings/Stainless-Steel-J-Bend-150x150.jpg'),
+            },
+            {
+              name:"T.C BEND",
+              img:require('./Images/ProductMain/dairyFittings/tc-bend-500x500-1-150x150.jpg'),
+            },
+            {
+              name:"UNION",
+              img:require('./Images/ProductMain/dairyFittings/sms-union-weldable-500x500-2-150x150.jpg'),
+            },
+           
+            {
+              name:"SEAMLESS TEE",
+              img:require('./Images/ProductMain/dairyFittings/equal-tee-500x500-1-150x150.jpg'),
+            },
+  ]
+}
 export const StainlessSteel={
     name: "Stainless Steel",
-    img: require("./Images/PipeFitting/Bgimg1.jpg"),
+    img: require("./Images/ProductMain/stainlesssteel/img1.jpg"),
     text1: "Maruti Steel alloy stands at the forefront as a distinguished supplier, exporter, and stockist of Stainless Steel Products in India. Renowned for delivering unmatched quality, our Stainless Steel Products excel in corrosion resistance, durability, and exceptional heat tolerance. These products find wide-ranging applications across industries such as Shipbuilding, Chemical, Aerospace, Power Plant, and Sugar Mills, among others.",
     text2: "Our forte lies in supplying an array of stainless steel products, including Stainless Steel Pipes, Stainless Steel Tubes, Stainless Steel Pipe Fittings, Stainless Steel Flanges, Stainless Steel Socketweld Fittings, Stainless Steel Screwed Fittings, Stainless Steel Fasteners, Stainless Steel Valves, and much more. At  Maruti Steel alloys, we provide a comprehensive range that caters to a multitude of applications across various industries.",
     text3: "Explore our collection of top-quality stainless steel products, designed for exceptional durability and performance. From pipes and fittings to fasteners and valves, we deliver excellence in every piece.",
@@ -728,46 +803,43 @@ export const StainlessSteel={
     type: [
         {
             name:"Stainless Steel Pipes",
-            img:require('./Images/PipeFitting/Simg1.jpg'),
+            img:require('./Images/ProductMain/stainlesssteel/Pipe7.jpg'),
               },
               {
                 name:"Stainless Steel Tube Pipes",
-                img:require('./Images/PipeFitting/Simg2.jpg'),
+                img:require('./Images/ProductMain/stainlesssteel/PipeImg.jpg'),
               },
               {
                 name:"Stainless Steel Pipe Fittings",
-                img:require('./Images/PipeFitting/Simg3.jpg'),
+                img:require('./Images/ProductMain/stainlesssteel/Img2.webp'),
               },
               {
                 name:"Stainless Steel Flanges",
-                img:require('./Images/PipeFitting/Simg4.jpg'),
+                img:require('./Images/ProductMain/stainlesssteel/ProductBgimg.jpg'),
               },
               {
                 name:"Stainless Steel Socketweld Fittings",
-                img:require('./Images/PipeFitting/Simg5.jpg'),
+                img:require('./Images/ProductMain/stainlesssteel/Bgimg1.jpg'),
               },
               {
                 name:"Stainless Steel Screwed Fittings",
-                img:require('./Images/PipeFitting/Simg6.jpg'),
+                img:require('./Images/ProductMain/stainlesssteel/Bgimg2.jpg'),
               },
               {
                 name:"Stainless Steel Fasteners",
-                img:require('./Images/PipeFitting/Simg7.jpg'),
+                img:require('./Images/ProductMain/stainlesssteel/img10.png'),
               },
               {
                 name:"Stainless Steel Valves",
-                img:require('./Images/PipeFitting/Simg9.jpg'),
-              },
-              {
-                name:"Insert",
-                img:require('./Images/PipeFitting/Simg8.jpg'),
-              },
+                img:require('./Images/ProductMain/stainlesssteel/valveImg.jpeg'),
+              }
+             
     ]
 }
 
 export const CarbonSteel ={
     name: "Carbon Steel",
-    img: require("./Images/PipeFitting/Bgimg1.jpg"),
+    img: require("./Images/ProductMain/carbonSteel/img1.webp"),
     text1: " Maruti Steel alloys stands as a prominent supplier, exporter, and stockist of Carbon Steel Products in India. Renowned for delivering unparalleled quality, our Carbon Steel Products exhibit corrosion resistance, durability, and exceptional heat resistance. Widely applied across industries such as Shipbuilding, Chemical, Aerospace, Power Plant, and Sugar Mills, our products meet the highest standards of performance.",
     text2: "Our specialty lies in offering an extensive range of carbon steel products, including Carbon Steel Pipes, Carbon Steel Tubes, Carbon Steel Pipe Fittings, Carbon Steel Flanges, Carbon Steel Socketweld Fittings, Carbon Steel Screwed Fittings, Carbon Steel Fasteners, Carbon Steel Valves, and more. At Excel Steels, we deliver a comprehensive selection to meet diverse industrial requirements with utmost precision and reliability.",
     text3: "Explore our collection of top-quality Carbon steel products, designed for exceptional durability and performance. From pipes and fittings to fasteners and valves, we deliver excellence in every piece.",
@@ -783,39 +855,37 @@ export const CarbonSteel ={
     type: [
         {
             name:"Carbon Steel Pipes",
-            img:require('./Images/PipeFitting/Simg1.jpg'),
+            img:require('./Images/ProductMain/carbonSteel/carbonPipe.webp'),
               },
               {
                 name:"Carbon Steel Tube Pipes",
-                img:require('./Images/PipeFitting/Simg2.jpg'),
+                img:require('./Images/ProductMain/carbonSteel/carbon-steel-tube.jpg'),
               },
               {
                 name:"Carbon Steel Pipe Fittings",
-                img:require('./Images/PipeFitting/Simg3.jpg'),
+                img:require('./Images/ProductMain/carbonSteel/ms-butt-weld-fittings.png'),
               },
               {
                 name:"Carbon Steel Flanges",
-                img:require('./Images/PipeFitting/Simg4.jpg'),
+                img:require('./Images/ProductMain/carbonSteel/carbon-steel-flanges.jpeg'),
               },
               {
                 name:"Carbon Steel Socketweld Fittings",
-                img:require('./Images/PipeFitting/Simg5.jpg'),
+                img:require('./Images/ProductMain/carbonSteel/forged-fittings-socket.jpg'),
               },
               {
                 name:"Carbon Steel Screwed Fittings",
-                img:require('./Images/PipeFitting/Simg6.jpg'),
+                img:require('./Images/ProductMain/carbonSteel/cs-threaded-fittings.jpg'),
               },
               {
                 name:"Carbon Steel Fasteners",
-                img:require('./Images/PipeFitting/Simg7.jpg'),
+                img:require('./Images/ProductMain/carbonSteel/carbon-steel-fasteners.jpg'),
               },
               {
                 name:"Carbon Steel Valves",
-                img:require('./Images/PipeFitting/Simg9.jpg'),
-              },
-              {
-                name:"Insert",
-                img:require('./Images/PipeFitting/Simg8.jpg'),
-              },
+                img:require('./Images/ProductMain/carbonSteel/carbon valve.webp'),
+              }
+            
     ]
 }
+

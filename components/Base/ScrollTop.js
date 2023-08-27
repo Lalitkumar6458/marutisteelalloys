@@ -25,7 +25,7 @@ const ScrollTop = () => {
 
   return (
     <button
-      className={`md:h-[30px] md:w-[30px] h-[40px] w-[40px]  rounded-[10px] fixed right-9 bottom-5 bg-mainRed text-white flex items-center justify-center text-[27px] md:text-[20px] ${
+      className={` z-50 md:h-[30px] md:w-[30px] h-[40px] w-[40px]  rounded-[10px] fixed right-9 bottom-5 bg-mainRed text-white flex items-center justify-center text-[27px] md:text-[20px] ${
         showButton ? 'opacity-100' : 'opacity-0'
       }`}
       onClick={handleClick}

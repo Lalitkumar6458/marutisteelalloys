@@ -76,7 +76,7 @@ const ContactForm = ({heading}) => {
         >
           {heading ? (
             <>
-              (
+              
               <h2 className="text-mainRed font-Roboto font-semibold text-[1.7rem] md:text-[2rem]">
                 You Have Question?
               </h2>
@@ -84,7 +84,7 @@ const ContactForm = ({heading}) => {
                 Contact us using the form below,and we'll be happy to assist
                 you.
               </p>
-              )
+              
             </>
           ) : null}
 

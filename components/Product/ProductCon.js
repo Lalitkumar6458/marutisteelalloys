@@ -14,7 +14,7 @@ import Application from './Application'
 import SupplierCities from './SupplierCities'
 import SupplierCountries from './SupplierCountries';
 
-const ProductCon = ({data,name}) => {
+const ProductCon = ({data,name,grade,heading}) => {
     console.log(name,"name")
    
 const SpecificationsKey = Object.keys(data.Specifications);
@@ -40,9 +40,12 @@ const GradeKey = Object.keys(GradeData.gardeData);
           <p className="text-[1rem] md:text-[1.1rem] font-poppins font-normal my-5">
             {data.text1}
           </p>
-          <h2 className="text-[1.4rem]  md:text-[2rem] font-Roboto font-semibold text-dark-cl">
+          {
+            heading?<h2 className="text-[1.4rem]  md:text-[2rem] font-Roboto font-semibold text-dark-cl">
             {data.heading}
-          </h2>
+          </h2>:null
+          }
+          
           <p className="text-[1rem] md:text-[1.1rem] font-poppins font-normal my-5">
             {data.text2}
           </p>
@@ -84,7 +87,8 @@ const GradeKey = Object.keys(GradeData.gardeData);
                 </tbody>
               </table>
             </div>
-            <div className="overflow-auto">
+            {
+              grade?<div className="overflow-auto">
               <table className="border border-collapse w-full">
                 <thead>
                   <tr className="">
@@ -109,7 +113,9 @@ const GradeKey = Object.keys(GradeData.gardeData);
                   })}
                 </tbody>
               </table>
-            </div>
+            </div>:null
+            }
+            
           </div>
           <div className=" border-b border-gray-500 mt-[40px]">
             <h3 className="text-[1.6rem] md:text-[2rem] font-Roboto font-semibold border-b-2 border-mainRed w-fit text-dark-cl">
@@ -133,7 +139,7 @@ const GradeKey = Object.keys(GradeData.gardeData);
                         />
                       </div>
                       <div className="h-[20%] flex items-center justify-center">
-                        <h3 className="text-[1.4rem] font-Oswald font-medium text-dark-cl">
+                        <h3 className="text-[1.3rem] font-Oswald font-medium text-dark-cl">
                           {item.name}
                         </h3>
                       </div>

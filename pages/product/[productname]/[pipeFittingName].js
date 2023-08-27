@@ -29,7 +29,7 @@ const pipeFitting = () => {
           <PageHeading heading={heading} img={img} bredcurm="Product" />
           <div className="grid grid-cols-1 md:grid-cols-4 px-[5%] h-auto mt-[40px] mb-[40px] gap-3">
             <div className=" md:col-span-3 h-ful">
-              <ProductCon data={data} name={heading} />
+              <ProductCon data={data} name={heading} heading={true} grade={true} />
             </div>
             <div className="border ">
               <RigthSideBox

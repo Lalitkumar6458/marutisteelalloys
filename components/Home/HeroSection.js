@@ -40,7 +40,7 @@ const HeroSection = () => {
             id:4,
             text:<sapn>Reliable Fasteners Supplier for <br className='hidden md:block'/> Your Every Need</sapn>,
             desc:"As a trusted fasteners supplier, we offer a comprehensive range of top-quality fastening solutions to meet your diverse requirements with precision and excellence.",
-            img:require("../../public/Images/HomeImg/fasternarImg.webp"),
+            img:require("../../public/Images/HomeImg/Fasteners.jpg"),
             
     
         },
@@ -48,7 +48,7 @@ const HeroSection = () => {
             id:5,
             text:<span>Your Trusted Source for Dairy &<br className='hidden md:block'/> Pharma Fittings</span>,
             desc:"We specialize in providing high-quality and hygienic dairy and pharma fittings, ensuring safety and precision for critical industries.",
-            img:require("../../public/Images/HomeImg/dairyFittingImg.webp"),
+            img:require("../../public/Images/ProductMain/stainlesssteel/bgimg.webp"),
             
     
         }

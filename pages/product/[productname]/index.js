@@ -14,6 +14,7 @@ import {
   GasketData,
   SheetPlateData,
   CoilsStripData,
+  DairyFittings
 } from "@/public/constantData";
 import PipeFitting from "@/components/Product/PipeFittings/PipeFitting";
 import RigthSideBox from "@/components/Product/RigthSideBox";
@@ -52,7 +53,12 @@ const index = () => {
   } else if (productname == "gasket") {
     heading='Gasket'
     data = GasketData;
-  } else {
+  } 
+  else if (productname == "dairyFetting") {
+    heading='Dairy Fettings'
+    data = DairyFittings;
+  }
+  else {
      router.push("/product");
   }
 
@@ -68,7 +74,7 @@ const index = () => {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-4 px-[5%] h-auto mt-[40px] mb-[40px] gap-3">
           <div className=" md:col-span-3 h-ful">
-            <ProductCon data={data} name={heading} />
+            <ProductCon data={data} name={heading} heading={true} grade={true} />
           </div>
           <div className="border shadow-lg rounded-md">
             <RigthSideBox pathname={`/product/${productname}`} />

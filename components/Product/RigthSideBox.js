@@ -27,6 +27,10 @@ const RigthSideBox = ({ pathname }) => {
       link: "/product/flanges",
     },
     {
+name:"Dairy Fittings",
+link:"/product/dairyFetting"
+    },
+    {
       name: "Fasteners",
       link: "/product/fasteners",
     },
