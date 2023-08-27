@@ -5,8 +5,12 @@ import {FiPlus} from "react-icons/fi"
 import {LiaAngleRightSolid} from "react-icons/lia"
 import { Button, Drawer } from 'antd';
 import Image from 'next/image';
+import Router,{ useRouter } from 'next/router';
 import { websiteData } from '@/public/constantData';
 const Header = ({fixed}) => {
+  Router.events.on('routeChangeStart',(url)=>{
+  })
+
   const [open, setOpen] = useState(false);
   const[mobileheaderChildShow,setMobileHeaderChildShow]=useState({
     Product:false,
@@ -147,7 +151,9 @@ const Header = ({fixed}) => {
       link:"/"
     }
   ]
-
+  Router.events.on('routeChangeComplete',(url)=>{
+    setOpen(false)
+  })
   const showSubmenuMobile=(name)=>{
     console.log("name",name)
     setMobileHeaderChildShow(
