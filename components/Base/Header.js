@@ -163,101 +163,185 @@ const Header = ({fixed}) => {
       }
     )
   }
+    const downloadPdf = () => {
+      const anchor = document.createElement("a");
+      anchor.href = "/MarutiSteelAlloysCatalogue.pdf"; // Adjust the path to your PDF file
+      anchor.target = "_blank";
+      anchor.download = "MarutiSteelAlloysCatalogue.pdf"; // Set the desired filename for download
+      anchor.click();
+    };
 
   return (
-  <div className='px-[5%] transition-all duration-500 shadow-headerShadow h-[60px] flex items-center justify-center z-[1000] bg-white w-full' style={{position:fixed?"fixed":"relative",top:fixed?"0px":null}}>
-<div className='flex items-center justify-between w-full'>
-<div className='text-[1.6rem] h-full font-heading font-medium text-dark-cl'>
-<Image className='h-[50px]' src={websiteData.logo} alt={websiteData.name} width={200} height={70}/>
-</div>
-<div className='flex items-center gap-5'>
-<ul className='hidden items-center justify-center gap-3 md:flex'>
-{
-  data.map((item)=>{
-    return <li key={item.name}  className='text-[1.1rem] font-poppins font-medium rounded-md hover:text-dark-pink text-primary-clr h-[60px] px-2 flex items-center justify-center relative group'>
-    <Link href={item.link}>{item.name}</Link> {item.submenu?<FiPlus className='ml-[5px] cursor-pointer'/>:null}
-{
-  item.submenu?<ul className='top-[60px] absolute w-fit bg-white text-gray-900 shadow-boxshadow pt-2 border-t-2 border-dark-cl hidden group-hover:block'>
-  {
-    item.submenu.map((each)=>{
-      return <li key={each.name} className='text-[1rem]  whitespace-nowrap hover:text-dark-pink text-primary-clr h-[40px] px-5 border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative childNav '><Link href={each.link}>{each.name}</Link>
-      
-      {each.submenu?<LiaAngleRightSolid/>:null}
+    <div
+      className="px-[5%] transition-all duration-500 shadow-headerShadow h-[60px] flex items-center justify-center z-[1000] bg-white w-full"
+      style={{
+        position: fixed ? "fixed" : "relative",
+        top: fixed ? "0px" : null,
+      }}
+    >
+      <div className="flex items-center justify-between w-full">
+        <div className="text-[1.6rem] h-full font-heading font-medium text-dark-cl">
+          <Image
+            className="h-[50px]"
+            src={websiteData.logo}
+            alt={websiteData.name}
+            width={200}
+            height={70}
+          />
+        </div>
+        <div className="flex items-center gap-5">
+          <ul className="hidden items-center justify-center gap-3 md:flex">
+            {data.map((item) => {
+              return (
+                <li
+                  key={item.name}
+                  className="text-[1.1rem] font-poppins font-medium rounded-md hover:text-dark-pink text-primary-clr h-[60px] px-2 flex items-center justify-center relative group"
+                >
+                  <Link href={item.link}>{item.name}</Link>{" "}
+                  {item.submenu ? (
+                    <FiPlus className="ml-[5px] cursor-pointer" />
+                  ) : null}
+                  {item.submenu ? (
+                    <ul className="top-[60px] absolute w-fit bg-white text-gray-900 shadow-boxshadow pt-2 border-t-2 border-dark-cl hidden group-hover:block">
+                      {item.submenu.map((each) => {
+                        return (
+                          <li
+                            key={each.name}
+                            className="text-[1rem]  whitespace-nowrap hover:text-dark-pink text-primary-clr h-[40px] px-5 border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative childNav "
+                          >
+                            <Link href={each.link}>{each.name}</Link>
 
-      {
-        each.submenu?<ul className='left-[101%] absolute top-[-2px] bg-white text-gray-900 shadow-boxshadow border-t-2 border-blue-dark '>
-        {
-          each.submenu.map((every)=>{
-            return  <li key={every.name}  className='text-[1rem] bg-white whitespace-nowrap h-[40px] px-5 hover:text-dark-pink text-primary-clr  border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative'><Link href={every.link}>{every.name}</Link></li>
-          })
-        }
-        </ul>:null
-      
-      }
-      </li>
-    })
-  }
-  </ul>:null
+                            {each.submenu ? <LiaAngleRightSolid /> : null}
 
-}
-
-    </li>
-  })
-}
-</ul>
-<button className= ' hidden h-[40px] bg-dark-cl text-white rounded-md px-3 text-[1.2rem] font-exo md:flex items-center justify-center'>Catalogue
-</button>
-<div className='flex items-center gap-5'>
-<FaSearch className='text-[1.2rem] cursor-pointer'/>
-<FaBars onClick={showDrawer} className='text-[1.2rem] cursor-pointer md:hidden'/>
-</div>
-</div>
-
-</div>
-<Drawer title="Maruti Steel Alloys" width={300} placement="right" onClose={onClose} open={open}>
-<div className=''>
-<ul>
-{data.map((item,index)=>{
-  return <li className=' text-[1.2rem] pb-[10px] font-Roboto font-medium'><div className='flex items-center' key={item.name}>
-  <Link href={item.link}>{item.name}</Link>
-  {item.submenu?mobileheaderChildShow[item.name]?<FaMinus className='ml-[5px] cursor-pointer' onClick={()=>showSubmenuMobile(item.name)}/>:
-    <FiPlus className='ml-[5px] cursor-pointer' onClick={()=>showSubmenuMobile(item.name)}/>
-    :null}
-  
-  </div>
-  {
-    item.submenu?<ul className={`h-fit ml-5 shadow ${mobileheaderChildShow[item.name]?'':'hidden'}`}>
-    {item.submenu.map((item,index)=>{
-      return <li className='px-2 py-2' key={item.name}>
-      <div className='flex items-center'>
-      <Link href={item.link}>{item.name}</Link>
-      {item.submenu?mobileheaderChildShow[item.name]?<FaMinus className='ml-[5px] cursor-pointer' onClick={()=>showSubmenuMobile(item.name)}/>:
-      <FiPlus className='ml-[5px] cursor-pointer' onClick={()=>showSubmenuMobile(item.name)}/>
-      :null}
+                            {each.submenu ? (
+                              <ul className="left-[101%] absolute top-[-2px] bg-white text-gray-900 shadow-boxshadow border-t-2 border-blue-dark ">
+                                {each.submenu.map((every) => {
+                                  return (
+                                    <li
+                                      key={every.name}
+                                      className="text-[1rem] bg-white whitespace-nowrap h-[40px] px-5 hover:text-dark-pink text-primary-clr  border-b border-blue-dark flex items-center justify-between hover:border-l-2 relative"
+                                    >
+                                      <Link href={every.link}>
+                                        {every.name}
+                                      </Link>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            ) : null}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+          <button
+            onClick={downloadPdf}
+            className=" hidden h-[40px] bg-dark-cl text-white rounded-md px-3 text-[1.2rem] font-exo md:flex items-center justify-center"
+          >
+            Catalogue
+          </button>
+          <div className="flex items-center gap-5">
+            <FaSearch className="text-[1.2rem] cursor-pointer" />
+            <FaBars
+              onClick={showDrawer}
+              className="text-[1.2rem] cursor-pointer md:hidden"
+            />
+          </div>
+        </div>
       </div>
-      {
-        item.submenu?<ul className={`h-fit ml-5 shadow ${mobileheaderChildShow[item.name]?'':'hidden'}`}>
-        {item.submenu.map((item,index)=>{
-          return <li className='px-2 py-2' key={item.name}>
-          <Link href={item.link}>{item.name}</Link>
-          </li>
-        })
-      }
-        </ul>:null
-      }
-      </li>
-    })}
-    </ul>:null
-  }
-  </li>
-})}
-</ul>
-<button className='h-[50px] bg-dark-cl text-white rounded-md px-3 text-[1.3rem] font-exo md:flex items-center justify-center mt-4'>Catalogue
-</button>
-</div>
-</Drawer>
-  </div>
-  )
+      <Drawer
+        title="Maruti Steel Alloys"
+        width={300}
+        placement="right"
+        onClose={onClose}
+        open={open}
+      >
+        <div className="">
+          <ul>
+            {data.map((item, index) => {
+              return (
+                <li className=" text-[1.2rem] pb-[10px] font-Roboto font-medium">
+                  <div className="flex items-center" key={item.name}>
+                    <Link href={item.link}>{item.name}</Link>
+                    {item.submenu ? (
+                      mobileheaderChildShow[item.name] ? (
+                        <FaMinus
+                          className="ml-[5px] cursor-pointer"
+                          onClick={() => showSubmenuMobile(item.name)}
+                        />
+                      ) : (
+                        <FiPlus
+                          className="ml-[5px] cursor-pointer"
+                          onClick={() => showSubmenuMobile(item.name)}
+                        />
+                      )
+                    ) : null}
+                  </div>
+                  {item.submenu ? (
+                    <ul
+                      className={`h-fit ml-5 shadow ${
+                        mobileheaderChildShow[item.name] ? "" : "hidden"
+                      }`}
+                    >
+                      {item.submenu.map((item, index) => {
+                        return (
+                          <li className="px-2 py-2" key={item.name}>
+                            <div className="flex items-center">
+                              <Link href={item.link}>{item.name}</Link>
+                              {item.submenu ? (
+                                mobileheaderChildShow[item.name] ? (
+                                  <FaMinus
+                                    className="ml-[5px] cursor-pointer"
+                                    onClick={() => showSubmenuMobile(item.name)}
+                                  />
+                                ) : (
+                                  <FiPlus
+                                    className="ml-[5px] cursor-pointer"
+                                    onClick={() => showSubmenuMobile(item.name)}
+                                  />
+                                )
+                              ) : null}
+                            </div>
+                            {item.submenu ? (
+                              <ul
+                                className={`h-fit ml-5 shadow ${
+                                  mobileheaderChildShow[item.name]
+                                    ? ""
+                                    : "hidden"
+                                }`}
+                              >
+                                {item.submenu.map((item, index) => {
+                                  return (
+                                    <li className="px-2 py-2" key={item.name}>
+                                      <Link href={item.link}>{item.name}</Link>
+                                    </li>
+                                  );
+                                })}
+                              </ul>
+                            ) : null}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+          <button
+            onClick={downloadPdf}
+            className="h-[50px] bg-dark-cl text-white rounded-md px-3 text-[1.3rem] font-exo md:flex items-center justify-center mt-4"
+          >
+            Catalogue
+          </button>
+        </div>
+      </Drawer>
+    </div>
+  );
 }
 
 export default Header
