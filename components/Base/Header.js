@@ -14,18 +14,20 @@ const searchResult = (data) =>{
    return {
      value: item.label,
      label: (
-       <div
-         style={{
-           display: "flex",
-           justifyContent: "space-between",
-         }}
-         key={idx}
-       >
-         <span>
-           <Link href={item.value}>{item.label}</Link>
-         </span>
-         <span>{data.length} results</span>
-       </div>
+       <Link href={item.value}>
+         <div
+           style={{
+             display: "flex",
+             justifyContent: "space-between",
+           }}
+           key={idx}
+         >
+           <span>
+             <Link href={item.value}>{item.label}</Link>
+           </span>
+           <span>{data.length} results</span>
+         </div>
+       </Link>
      ),
    };
  });
