@@ -76,8 +76,13 @@ body{
 }
 .slick-list li{
     list-style-type:  none !important;
-    
+
 }
 .slick-dots li button:before{
     color: transparent !important;
+}
+
+.animate-section {
+  opacity: 0;
+  transform: translateY(20px);
 }

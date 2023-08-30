@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import img from "../public/Images/aboutImg.jpg"
 import PageHeading from '@/components/Base/PageHeading'
 import { websiteData } from '@/public/constantData'
@@ -9,6 +9,7 @@ import SectionHeading from '@/components/SmallComponents/SectionHeading'
 import Link from 'next/link'
 import {IoEye} from "react-icons/io5"
 import{FaEye} from "react-icons/fa"
+import {motion} from "framer-motion"
 const about = () => {
   const factSheet = [
     {
@@ -85,12 +86,39 @@ const about = () => {
     },
     
     ]
+
+     useEffect(() => {
+       const sections = document.querySelectorAll(".animate-section");
+
+       const observer = new IntersectionObserver((entries) => {
+         entries.forEach((entry) => {
+           if (entry.isIntersecting) {
+             entry.target.classList.add("in-view");
+           } else {
+             entry.target.classList.remove("in-view");
+           }
+         });
+       });
+
+       sections.forEach((section) => {
+         observer.observe(section);
+       });
+
+       return () => {
+         observer.disconnect();
+       };
+     }, []);
   return (
     <div>
       <PageHeading heading="About Us" img={img} bredcurm="about us" />
       <div className="mt-[40px] mb-[40px] px-[5%]">
         <SectionHeading heading={"Company Profile"} />
-        <div className="flex items-center mt-[20px] gap-5 md:gap-3 flex-wrap">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex items-center mt-[20px] gap-5 md:gap-3 flex-wrap animate-section"
+        >
           <div className="w-[100%] ">
             <p className="text-[1.2rem]  md:text-[1.5rem] font-Roboto font-semibold text-blue-dark">
               <span className="capitalize">{websiteData.name}</span> is a
@@ -135,12 +163,17 @@ const about = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="">
           <div className="flex items-center justify-center flex-col gap-7 mt-[40px]">
             <SectionHeading heading={"fectSheet"} />
-            <table className="border-[1px] border-solid border-dark-cl border-collapse w-full">
+            <motion.table
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.8, delay: 0.26}}
+              className="border-[1px] border-solid border-dark-cl border-collapse w-full animate-section"
+            >
               <tbody>
                 {factSheet.map((item) => {
                   return (
@@ -155,7 +188,7 @@ const about = () => {
                   );
                 })}
               </tbody>
-            </table>
+            </motion.table>
           </div>
         </div>
       </div>
