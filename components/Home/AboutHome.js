@@ -8,11 +8,13 @@ import Link from 'next/link'
 const AboutHome = () => {
 const controls = useAnimation();
 const [ref, inView] = useInView();
+const [ref1, inView1] = useInView();
+
 useEffect(() => {
-  if (inView) {
+  if (inView || inView1) {
     controls.start("visible");
   }
-}, [controls, inView]);
+}, [controls, inView, inView1]);
   // useEffect(() => {
   //   controls.start({ opacity: 1, y: 0 });
   // }, [controls]);
@@ -31,7 +33,7 @@ const textAni = {
   return (
     <div className="w-full pt-[20px] px-[5%] ">
       <motion.div
-        ref={ref}
+        ref={ref1}
         animate={controls}
         initial="hidden"
         variants={headingAni}
