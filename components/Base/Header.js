@@ -179,10 +179,10 @@ const [openSearch, setOpenSearch] = useState(false);
       name:"Contact",
       link:"/contact"
     },
-    {
-      name:"Gallery",
-      link:"/"
-    }
+    // {
+    //   name:"Gallery",
+    //   link:"/"
+    // }
   ]
   Router.events.on('routeChangeComplete',(url)=>{
     setOpen(false)
