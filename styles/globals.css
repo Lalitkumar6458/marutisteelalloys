@@ -86,3 +86,7 @@ body{
   opacity: 0;
   transform: translateY(20px);
 }
+.ant-btn-primary{
+    background: #DA251C !important;
+    color: #fff !important;
+}

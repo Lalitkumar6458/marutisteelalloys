@@ -119,7 +119,7 @@ const HeroSection = () => {
                     <motion.h1
                       transition={itemTransition.heading}
                       variants={itemVariants}
-                      className="text-[2rem] md:text-[3rem] lg:text-[3.6rem] text-white font-Oswald font-medium"
+                      className="text-[2rem] mb-3 md:mb-0 md:text-[3rem] lg:text-[3.6rem] text-white font-Oswald font-medium"
                       style={{ textShadow: "3px 3px 6px black" }}
                     >
                       {item.text}
@@ -127,7 +127,7 @@ const HeroSection = () => {
                     <motion.p
                       transition={itemTransition.text}
                       variants={itemVariants}
-                      className="w-[95%] md:w-[80%]  lg:w-[50%] text-left text-white text-[1rem] md:text-[1.2rem] border-l-2 border-dark-cl pl-5 font-Roboto font-medium"
+                      className="w-[95%] mt-3 md:mt-0 md:w-[80%]  lg:w-[50%] text-left text-white text-[1rem] md:text-[1.2rem] border-l-2 border-dark-cl pl-5 font-Roboto font-medium"
                       style={{ textShadow: "3px 3px 6px black" }}
                     >
                       {item.desc}
@@ -135,7 +135,7 @@ const HeroSection = () => {
                     <motion.div
                       transition={itemTransition.button}
                       variants={itemVariants}
-                      className="mt-5 flex gap-3"
+                      className="mt-7 md:mt-5 flex gap-3"
                     >
                       <Link href="/product">
                         <button className="bg-dark-cl text-white h-[50px] px-4 rounded font-poppins font-medium">

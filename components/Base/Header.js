@@ -3,14 +3,40 @@ import Link from 'next/link'
 import { FaSearch,FaBars, FaMinus } from 'react-icons/fa'
 import {FiPlus} from "react-icons/fi"
 import {LiaAngleRightSolid} from "react-icons/lia"
-import { Button, Drawer } from 'antd';
+import { Button, Drawer, AutoComplete, Input } from "antd";
 import Image from 'next/image';
 import Router,{ useRouter } from 'next/router';
 import { websiteData } from '@/public/constantData';
+
+
+const searchResult = (data) =>{
+ const searchData = data.map((item, idx) => {
+   return {
+     value: item.label,
+     label: (
+       <div
+         style={{
+           display: "flex",
+           justifyContent: "space-between",
+         }}
+         key={idx}
+       >
+         <span>
+           <Link href={item.value}>{item.label}</Link>
+         </span>
+         <span>{data.length} results</span>
+       </div>
+     ),
+   };
+ });
+ return searchData;
+}
+
+
 const Header = ({fixed}) => {
   Router.events.on('routeChangeStart',(url)=>{
   })
-
+const [openSearch, setOpenSearch] = useState(false);
   const [open, setOpen] = useState(false);
   const[mobileheaderChildShow,setMobileHeaderChildShow]=useState({
     Product:false,
@@ -23,6 +49,13 @@ const Header = ({fixed}) => {
   const onClose = () => {
     setOpen(false);
   };
+  const onSearchClose=()=>{
+    setOpenSearch(false)
+  }
+  const showSearchtDrawer=()=>{
+    setOpenSearch(true);
+
+  }
   const data=[
     {
       name:"Home",
@@ -170,6 +203,33 @@ const Header = ({fixed}) => {
       anchor.download = "MarutiSteelAlloysCatalogue.pdf"; // Set the desired filename for download
       anchor.click();
     };
+  const [options, setOptions] = useState([]);
+  const handleSearch = (value) => {
+   const searchdfhesult= searchLabelsAndValuesByText(data,value)
+    setOptions(value ? searchResult(searchdfhesult) : []);
+  };
+  const onSelect = (value) => {
+    onSearchClose()
+  };
+
+  function searchLabelsAndValuesByText(objects, searchText) {
+    const matchingItems = [];
+
+    function searchRecursive(items) {
+      for (const item of items) {
+        if (item.name.toLowerCase().includes(searchText.toLowerCase())) {
+          matchingItems.push({ label: item.name, value: item.link });
+        }
+        if (item.submenu) {
+          searchRecursive(item.submenu);
+        }
+      }
+    }
+
+    searchRecursive(objects);
+    return matchingItems;
+  }
+
 
   return (
     <div
@@ -245,7 +305,10 @@ const Header = ({fixed}) => {
             Catalogue
           </button>
           <div className="flex items-center gap-5">
-            <FaSearch className="text-[1.2rem] cursor-pointer" />
+            <FaSearch
+              onClick={showSearchtDrawer}
+              className="text-[1.2rem] cursor-pointer"
+            />
             <FaBars
               onClick={showDrawer}
               className="text-[1.2rem] cursor-pointer md:hidden"
@@ -338,6 +401,27 @@ const Header = ({fixed}) => {
           >
             Catalogue
           </button>
+        </div>
+      </Drawer>
+      <Drawer
+        title={` Search More About Products...`}
+        placement="top"
+        height={150}
+        onClose={onSearchClose}
+        open={openSearch}
+      >
+        <div className="">
+          <AutoComplete
+            dropdownMatchSelectWidth={252}
+            style={{
+              width: '100%',
+            }}
+            options={options}
+            onSelect={onSelect}
+            onSearch={handleSearch}
+          >
+            <Input.Search size="large" placeholder="Search here...!" enterButton />
+          </AutoComplete>
         </div>
       </Drawer>
     </div>
