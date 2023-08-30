@@ -11,11 +11,13 @@ import ContactForm from "../Base/ContactForm";
 const ContactUs = () => {
  const controls = useAnimation();
  const [ref, inView] = useInView();
+ const [ref1, inView1] = useInView();
+
  useEffect(() => {
-   if (inView) {
+   if (inView || inView1) {
      controls.start("visible");
    }
- }, [controls, inView]);
+ }, [controls, inView,inView1]);
   const handleEmailClick = () => {
 
     let email=websiteData.contactInfo.email
@@ -89,7 +91,7 @@ const ContactUs = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 bg-[#ffffffc0] lx:grid-cols-2 px-[5%] mt-[50px]  h-auto py-4 place-items-center gap-5 overflow-hidden mb-[50px] z-50 relative">
         <motion.div className="">
           <motion.div
-            ref={ref}
+            ref={ref1}
             animate={controls}
             initial="hidden"
             variants={squareVariants}
