@@ -38,6 +38,8 @@ const Layout = ({children}) => {
           name="description"
           content="Maruti Steel Alloys is leading Pipe, Tube, Stainless Steel Pipe, Stainless Steel Tube, Pipe Fittings, Flanges, Socketweld Fittings, Screwed Fittings, Fasteners, Valves Stockist &amp; Supplier in India."
         ></meta>
+
+        
       </Head>
       <div className="">
         <TopInfo />

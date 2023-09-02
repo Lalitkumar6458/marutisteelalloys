@@ -2,8 +2,9 @@ import { applicationsData } from '@/public/constantData';
 import Image from 'next/image';
 import React from 'react'
 import { BiArrowFromLeft } from 'react-icons/bi';
-
+import img from "../../public/Images/ProductMain/Group 1095.jpg";
 const Application = ({name}) => {
+  console.log("img", img);
   return (
     <div className="mt-9 mb-6">
       <div className=" border-b border-gray-500">
@@ -29,13 +30,7 @@ const Application = ({name}) => {
           </ul>
         </div>
         <div className="">
-          <Image
-            className=" h-[300px]"
-            src={applicationsData.img}
-            alt="application box"
-            width={400}
-            height={500}
-          />
+          <img src={img.src}/>
         </div>
       </div>
     </div>
