@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
       title: "Quality and Innovation ",
       ref: ref,
       description:
-        "At Marti Steel Alloys, we're driven by an unwavering commitment to excellence. Our dedication to quality craftsmanship and innovative solutions is the cornerstone of our success, ensuring that our products consistently meet and exceed industry standards.",
+        "At Maruti Steel Alloys, we're driven by an unwavering commitment to excellence. Our dedication to quality craftsmanship and innovative solutions is the cornerstone of our success, ensuring that our products consistently meet and exceed industry standards.",
     },
     {
       icon: <FaTools />,
