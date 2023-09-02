@@ -171,7 +171,7 @@ export const CountriesData={
     
 }
 export const applicationsData={
-    img:require("./Images/ProductMain/applicationImg.png"),
+    img:require("./Images/industries/Industries.png"),
     listdata:[
         "Used in the Petrochemical Industry.",
 "Used in the Oil and Gas Industry.",
