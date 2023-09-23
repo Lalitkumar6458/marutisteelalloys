@@ -1,6 +1,20 @@
-import React, { useState } from 'react'
-import { motion, useScroll } from "framer-motion";
+import React, { useState, useEffect } from "react";
+
+import { useAnimation, motion, AnimatePresence } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const ContactForm = ({heading}) => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+      if (inView) {
+        controls.start("visible");
+      }
+    }, [controls, inView]);
+
+    const squareVariants = {
+      visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1 } },
+      hidden: { opacity: 0, scale: 0.5, x: 100 },
+    };
      const [sendMeassege, setSendMessage] = useState(true);
    const [formValues, setFormValues] = useState({
      name: "",
@@ -67,16 +81,13 @@ const ContactForm = ({heading}) => {
       <div className="">
         <motion.div
           className="border-[1px] border-solid border-mainRed p-[7%] bg-[#ffffff65] rounded-md "
-          initial={{ opacity: 1, x: 0 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{
-            ease: "linear",
-            duration: 1,
-          }}
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={squareVariants}
         >
           {heading ? (
             <>
-              
               <h2 className="text-mainRed font-Roboto font-semibold text-[1.7rem] md:text-[2rem]">
                 You Have Question?
               </h2>
@@ -84,7 +95,6 @@ const ContactForm = ({heading}) => {
                 Contact us using the form below,and we'll be happy to assist
                 you.
               </p>
-              
             </>
           ) : null}
 

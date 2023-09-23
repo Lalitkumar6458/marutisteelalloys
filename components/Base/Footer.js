@@ -121,9 +121,9 @@ const list3=[
     const url = `https://wa.me/${formattedPhoneNumber}`;
     window.open(url, '_blank');
   };
-  const handleInsta=()=>{
-   
-  }
+  const handleInsta = (url) => {
+    window.open(url, "_blank");
+  };
   return (
    <div className='w-full bg-footerBg px-[5%] pt-[5%] pb-4 rounded-t-[30px]'>
    <div className='grid grid-cols-1 max-[767px]:gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 md:gap-y-4 text-white gap-3 '>
@@ -143,10 +143,22 @@ const list3=[
    <div className="mt-5">
    <ul className='flex items-center gap-2'>
    <li className='p-2 bg-white text-mainRed rounded-full mr-2 hover:bg-mainRed hover:text-white cursor-pointer transition-all duration-700 hover:scale-125' onClick={handleEmailClick}><Link href="/" className="fa-brands fa-google"><AiOutlineGoogle/></Link></li>
-   <li  className='p-2 bg-white text-mainRed rounded-full mr-2 hover:bg-mainRed hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'  onClick={handleInsta}><Link href="/" className="fa-solid fa-rss"><FaRss/></Link></li>
-   <li  className='p-2 bg-white text-mainRed rounded-full mr-2 hover:bg-mainRed hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'  onClick={handleInsta}><Link href="/" className="fa fa-facebook"><FaFacebookF/></Link></li>
+   <li  className='p-2 bg-white text-mainRed rounded-full mr-2 hover:bg-mainRed hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
+            handleInsta(
+              "https://www.facebook.com/profile.php?id=100064562211511&mibextid=ZbWKwL"
+            )
+          }><Link href="/" className="fa-solid fa-rss"><FaRss/></Link></li>
+   <li  className='p-2 bg-white text-mainRed rounded-full mr-2 hover:bg-mainRed hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
+            handleInsta(
+              "https://www.facebook.com/profile.php?id=100064562211511&mibextid=ZbWKwL"
+            )
+          }><Link href="/" className="fa fa-facebook"><FaFacebookF/></Link></li>
    <li  className='p-2 bg-white text-mainRed rounded-full mr-2 hover:bg-mainRed hover:text-white cursor-pointer transition-all duration-700 hover:scale-125' onClick={handleWhatsAppClick}><Link href="/" className="fa fa-twitter"><FaWhatsapp/></Link></li>
-   <li  className='p-2 bg-white text-mainRed rounded-full mr-2 hover:bg-mainRed hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'  onClick={handleInsta}><Link href="/" className="fa fa-linkedin"><FaLinkedinIn/></Link></li>
+   <li  className='p-2 bg-white text-mainRed rounded-full mr-2 hover:bg-mainRed hover:text-white cursor-pointer transition-all duration-700 hover:scale-125'   onClick={() =>
+            handleInsta(
+              "https://www.facebook.com/profile.php?id=100064562211511&mibextid=ZbWKwL"
+            )
+          }><Link href="/" className="fa fa-linkedin"><FaLinkedinIn/></Link></li>
 </ul>  
    </div>
  

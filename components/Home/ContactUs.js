@@ -1,14 +1,23 @@
 import { useState,useEffect } from "react";
 import { FaEnvelope, FaPhoneAlt} from "react-icons/fa";
 import { FaLocationDot,FaEarthAmericas,FaCircleUser } from "react-icons/fa6";
-import { motion, useScroll } from "framer-motion";
+import { useAnimation, motion, AnimatePresence } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import emailjs from '@emailjs/browser';
 import { websiteData } from "@/public/constantData";
 import contactImg from "../../public/Images/contactImg.png"
 import Image from "next/image";
 import ContactForm from "../Base/ContactForm";
 const ContactUs = () => {
+ const controls = useAnimation();
+ const [ref, inView] = useInView();
+ const [ref1, inView1] = useInView();
 
+ useEffect(() => {
+   if (inView || inView1) {
+     controls.start("visible");
+   }
+ }, [controls, inView,inView1]);
   const handleEmailClick = () => {
 
     let email=websiteData.contactInfo.email
@@ -22,7 +31,15 @@ const ContactUs = () => {
     window.location.href = url;
   };
 
-   
+     const squareVariants = {
+       visible: {
+         opacity: 1,
+         scale: 1,
+         x: 0,
+         transition: { duration: 1, ease: "linear" },
+       },
+       hidden: { opacity: 0, scale: 0.5, x: 100 },
+     };
 
  
 
@@ -74,12 +91,11 @@ const ContactUs = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 bg-[#ffffffc0] lx:grid-cols-2 px-[5%] mt-[50px]  h-auto py-4 place-items-center gap-5 overflow-hidden mb-[50px] z-50 relative">
         <motion.div className="">
           <motion.div
-            initial={{ opacity: 1, x: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              ease: "linear",
-              duration: 1,
-            }}
+            ref={ref1}
+            animate={controls}
+            initial="hidden"
+            variants={squareVariants}
+           
             className=""
           >
             <motion.h5 className="text-[1rem] text-mainRed">
@@ -100,12 +116,10 @@ const ContactUs = () => {
                 <motion.div
                   key={item.id}
                   className=" w-full  flex gap-2 flex-col items-center justify-center border-[1px] border-solid border-mainRed p-[20px] rounded "
-                  initial={{ opacity: 1, x: 0 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{
-                    ease: "linear",
-                    duration: 1,
-                  }}
+                  ref={ref}
+                  animate={controls}
+                  initial="hidden"
+                  variants={squareVariants}
                 >
                   <div className="text-mainRed ">{item.icon}</div>
                   <div className="flex flex-col items-center justify-center">
