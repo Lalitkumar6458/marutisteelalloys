@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { useAnimation, motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import emailjs from '@emailjs/browser';
 const ContactForm = ({heading}) => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
@@ -56,23 +57,23 @@ const ContactForm = ({heading}) => {
 
        if (isValid) {
          setSendMessage(false);
-         // Perform form submission logic here, e.g., sending data to the server
-         //  emailjs.send('service_bmugh1b', 'template_ca0u8mn', formValues, 'VTgQXID7Y0jR4k33a')
-         //  .then(response => {
+    
+          emailjs.send('service_vrn7s1a', 'template_0w32qnk', formValues, 'ABenhngj8-8_hsN3K')
+          .then(response => {
 
-         //    alert('Sent Message Successfully to rajesh alloys!', response)
+            alert('Sent Message Successfully to Maruti Steel alloys!', response)
 
-         //    setSendMessage(true)
-         //    setFormValues({
-         //     name: "",
-         //     email: "",
-         //     phoneNo: "",
-         //     message: "",
-         //   })
-         //  }, error => {
+            setSendMessage(true)
+            setFormValues({
+             name: "",
+             email: "",
+             phoneNo: "",
+             message: "",
+           }) 
+          }, error => {
 
-         //    alert('FAILED...',error)
-         //  });
+            alert('FAILED...',error)
+          });
        }
      };
 
