@@ -85,6 +85,10 @@ const HeroSection = () => {
       const handleBeforeChange = (currentSlide) => {
         setActiveSlide(currentSlide);
       };
+      const fadeInUp = {
+        initial: { opacity: 0, y: 30 },
+        animate: { opacity: 1, y: 0 },
+      };
   return (
     <div className="h-[calc(100vh-110px)] w-full">
       <Carousel
@@ -119,7 +123,7 @@ const HeroSection = () => {
                     <motion.h1
                       transition={itemTransition.heading}
                       variants={itemVariants}
-                      className="text-[2rem] mb-3 md:mb-0 md:text-[3rem] lg:text-[3.6rem] text-white font-Oswald font-medium"
+                      className="text-[2rem] mb-3 md:mb-0 md:text-[3rem] lg:text-[3.6rem] text-white font-Oswald font-medium "
                       style={{ textShadow: "3px 3px 6px black" }}
                     >
                       {item.text}

@@ -125,7 +125,7 @@ const about = () => {
               premier stockist and supplier, specializing in a comprehensive
               range of ferrous and non-ferrous metals.{" "}
             </p>
-
+ 
             <div className="mt-2">
               <p className="text-[1rem] md:text-[1.1rem] font-poppins font-medium">
                 {websiteData.name} stands as a rising industry leader in the
@@ -207,7 +207,7 @@ const about = () => {
             {OfferData.map((item) => {
               return (
                 <div
-                  className="shadow rounded-md p-3 flex items-center flex-col justify-center gap-3 border bg-[#ffffff65]"
+                  className="shadow  p-3 flex items-center flex-col justify-center gap-3 border border-mainRed bg-[#ffffff65]"
                   key={item.id}
                 >
                   <div className="bg-mainRed w-[50px] h-[50px] flex items-center justify-center rounded relative z-10 ">

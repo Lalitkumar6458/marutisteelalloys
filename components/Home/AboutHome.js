@@ -63,7 +63,7 @@ const textAni = {
             <span className="capitalize">{websiteData.name}</span> is a premier
             stockist and supplier, specializing in a comprehensive range of
             ferrous and non-ferrous metals.{" "}
-          </p>
+          </p>  
 
           <div className="mt-4 border-l-2 border-dark-pink pl-4">
             <p className="text-[1rem] md:text-[1.1rem] font-poppins font-medium">
