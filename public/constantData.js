@@ -17,6 +17,7 @@ export const websiteData = {
 
 export const pipeData = {
     name: "Pipe",
+    ogImg:"/Images/ProductMain/pipe/pipeImg.jpg",
     img: require("./Images/ProductMain/pipe/pipeImg.jpg"),
     text1: "That's great to hear! Maruti Steel Alloys seems to be a reputable company in the pipe supply industry, known for its high-quality products and wide range of applications. Offering corrosion-resistant, durable, and heat-resistant pipes is essential for various industries such as shipbuilding, chemical, aerospace, power plants, and sugar mills, where the quality of materials is crucial for safety and performance.",
     text2: "Maruti Steel Alloys holds a distinguished reputation as a premier pipe supplier in India, serving a global clientele across five continents and spanning over 26 countries. Renowned for our pipes' unmatched reliability and exceptional quality, we consider our clients as partners and prioritize their satisfaction above all. Operating under Maruti Steel Alloys, we offer an extensive range of pipes in various shapes, sizes, and specifications, ensuring a tailored solution for every need. Committed to continuous excellence, we strive to elevate industry standards and redefine the benchmarks for quality and dependability on a global scale.",
@@ -184,6 +185,7 @@ export const applicationsData={
 
 export const tubeData = {
     name: "Tubes",
+    ogImg:"/Images/ProductMain/tubes/tubes.jpeg",
    img: require("./Images/ProductMain/tubes/tubes.jpeg"),
     text1: "Maruti Steel Alloys, a leading tubes supplier, exporter, and stockist in India, is renowned for delivering superior quality tubes. Our tubes boast corrosion resistance, durability, and exceptional heat resistance, making them ideal for industries such as shipbuilding, chemical processing, aerospace, power plants, and sugar mills. Choose Maruti Steel Alloys for top-notch tube solutions that exceed industry standards.",
     text2: "As India's foremost supplier, dealer, and stockist of tubes, we proudly offer a comprehensive range of seamless tubes in various sizes, shapes, and grades. Our distribution network spans across major Indian cities and extends to over twenty states, ensuring widespread availability.",
@@ -214,7 +216,8 @@ export const tubeData = {
     ]
 }
 export const FlangesData = {
-    name: "Tubes",
+    name: "Flange",
+    ogImg:"/Images/ProductMain/Flange/flageImg.jpg",
     img: require("./Images/ProductMain/Flange/flageImg.jpg"),
     text1: "Maruti Steel Alloys stands as a premier supplier, exporter, and stockist of flanges in India. Renowned for our provision of top-tier quality, our flanges are synonymous with corrosion resistance, durability, and exceptional heat tolerance. Applied across diverse sectors including shipbuilding, chemical processing, aerospace, power generation, and sugar mills, our flanges consistently meet industry demands. Our extensive range spans various materials, including stainless steel, duplex and super duplex steel, carbon steel, nickel alloy, and alloy steel. Catering to large-scale needs, Maruti Steel Alloys remains an industry leader in flange solutions.",
     text2: "As India's foremost supplier, dealer, and stockist of flanges, we take pride in offering a comprehensive range available in various sizes, shapes, and grades. Our distribution network spans major Indian cities and extends to over twenty states, ensuring widespread availability. What sets us apart is our commitment to providing flanges conforming to different grade standards including ASME, EN, ISO, and DIN, cementing our position as industry leaders.",
@@ -279,7 +282,8 @@ export const FlangesData = {
 }
 
 export const fastenersData = {
-    name: "Tubes",
+    name: "Fasteners",
+    ogImg:"/Images/ProductMain/fastener/fastener.jpg",
     img: require("./Images/ProductMain/fastener/fastener.jpg"),
     text1: "Maruti Steel Alloys stands at the forefront as a premier supplier, exporter, and stockist of fasteners in India. Renowned for our provision of top-tier quality, our fasteners exemplify corrosion resistance, durability, and exceptional heat tolerance. Applied across diverse sectors including shipbuilding, chemical processing, aerospace, power generation, and sugar mills, our fasteners consistently meet industry demands. Our comprehensive range encompasses a variety of materials, including carbon steel, stainless steel, alloy steel, mild steel, monel 400, monel 500, hardened steel, and malleable iron.",
     text2: "As India's foremost supplier, dealer, and stockist of fasteners, we take pride in offering a comprehensive range available in various sizes, shapes, and grades. Our distribution network covers major Indian cities and extends across more than twenty states, ensuring widespread availability. Our distinction lies in providing a diverse range of grades such as ASTM A126 Gr A, ASTM A126 Gr B, ASTM A182 Gr F1, ASTM A182 Gr F5B, ASTM A182 Gr F304, and more, setting us apart as industry leaders",
@@ -337,6 +341,7 @@ export const fastenersData = {
 
 export const ValvesData = {
     name: "Valves",
+    ogImg:"/Images/ProductMain/valve/valveImg.webp",
     img: require("./Images/ProductMain/valve/valveImg.webp"),
     text1: "Maruti Steel Alloys stands as a prominent supplier, exporter, and stockist of valves in India. Renowned for our commitment to delivering superior quality, our valves epitomize corrosion resistance, durability, and exceptional heat resilience. Widely utilized across industries including shipbuilding, chemical processing, aerospace, power generation, and sugar mills, our valves consistently meet industry demands. Our diverse range encompasses materials such as carbon steel, stainless steel, alloy steel, mild steel, monel 400, monel 500, hardened steel, and malleable iron.",
     text2: "As India's premier supplier, dealer, and stockist of valves, we proudly present an extensive range available in diverse sizes, shapes, and grades. Our distribution network spans across major Indian cities and extends to over twenty states, ensuring widespread availability. Our distinctiveness lies in offering a variety of grades including ASTM A351 CF8/CF8M, ASTM A105, A350, and A182, setting us apart as leaders in the industry.",
@@ -387,6 +392,7 @@ export const ValvesData = {
 
 export const GasketData = {
     name: "Gasket",
+    ogImg:"/Images/ProductMain/gasket/gasketImg.jpg",
     img: require("./Images/ProductMain/gasket/gasketImg.jpg"),
     text1: "Maruti Steel Alloys stands as a premier supplier, exporter, and stockist of gaskets in India. Renowned for our unwavering commitment to delivering excellence, our gaskets embody corrosion resistance, durability, and exceptional heat resilience. With applications spanning diverse sectors including shipbuilding, chemical processing, aerospace, power generation, and sugar mills, our gaskets consistently meet industry demands. At Maruti Steel Alloys, we exclusively provide high-quality products, reinforcing our reputation in the market.",
     text2: "Maruti Steel Alloys holds a prominent position as a reputable gasket supplier in India. With a clientele spanning five continents and over 26 countries, we effectively fulfill a significant global demand. Our gaskets have earned worldwide acclaim for their reliability and quality. Through our product offerings and services, we view our customers as partners in success. Maruti Steel Alloys offers a diverse range of gaskets in various shapes, sizes, and specifications, catering to the specific needs of our valued customers.",
@@ -441,6 +447,7 @@ export const GasketData = {
 
 export const SheetPlateData = {
     name: "SHEET & PLATE",
+    ogImg:"/Images/ProductMain/Stainless-Steel-Sheet---Plate.jpg",
     img: require("./Images/ProductMain/Stainless-Steel-Sheet---Plate.jpg"),
     text1: "Maruti Steel Alloys stands as a premier supplier and exporter of exceptional stainless steel sheets and plates, ranging in thickness from 0.3mm to 120mm. Our products have found extensive applications across various industries. Additionally, we specialize in nickel and copper alloys, stainless and duplex steel, as well as carbon and alloy steel materials, all of which are employed in the fabrication of our sheets and plates.",
     text2: "We are committed to providing our clients with an extensive selection of Sheets and Coils, available in various specifications to suit their unique needs. Catering to diverse industries, our range is renowned for its exceptional corrosion resistance, durability, and high structural integrity.",
@@ -461,6 +468,7 @@ export const SheetPlateData = {
 
 export const CoilsStripData = {
     name: "COIL & STRIP",
+    ogImg:"/Images/product/Bgimg1.png",
     img: require("./Images/product/Bgimg1.png"),
     text1: "We ensure secure transportation of Coils & Strips through effective packaging, employing wooden cases or crates to safeguard against external damage. Our dedicated inspection and testing team meticulously evaluates these stainless steel coils on diverse parameters, assuring the quality and integrity of the final product. Additionally, independent examination is conducted to further validate the product's specifications.",
     text2: "Our commitment to quality is demonstrated through our provision of annealed coils, accompanied by standard test certifications. Furthermore, this product undergoes reinforcement through evaluations conducted by accredited organizations and private laboratory testing. This rigorous approach ensures that our stainless steel coils meet the highest industry standards and exceed expectations.",
@@ -520,6 +528,7 @@ export const pipeFittingDat = {
 export const ButtweldWeldPipeFittingsData={
 
       name: "BUTTWELD PIPE FITTINGS",
+      ogImg:'/Images/PipeFitting/BgPImg.jpg',
     img: require("./Images/PipeFitting/BgPImg.jpg"),
     text1: "When it comes to Buttweld Pipe Fittings, Maruti Steel Alloys stands out as your trusted supplier, ensuring impeccable quality and precision in every piece. We take pride in offering a diverse range of fittings, each crafted to perfection, to seamlessly fit into your industrial applications. Our commitment to excellence extends to both the size and quality of our products, ensuring that your projects receive fittings that meet the highest standards.",
     text2: "At Maruti Steel Alloys, we understand that a perfect fit can make all the difference. Our Buttweld Pipe Fittings are available in a range of sizes meticulously designed to facilitate seamless integration with your existing systems. Each fitting is engineered to precision, ensuring that it aligns flawlessly with your pipes, minimizing the risk of leaks and optimizing the overall performance of your operations.",
@@ -571,6 +580,7 @@ export const ButtweldWeldPipeFittingsData={
 export const ThreadedPipeFittingsData={
     
     name: "THREADED PIPE FITTINGS",
+    ogImg:'/Images/PipeFitting/Bgimg2.jpg',
     img: require("./Images/PipeFitting/Bgimg2.jpg"),
     text1: "Maruti Steel Alloys takes the lead as a prominent supplier, exporter, and stockist of Threaded fittings in India. Renowned for delivering unmatched quality, our screwed fittings excel in corrosion resistance, durability, and exceptional heat tolerance. These fittings find their application in diverse industries, such as Shipbuilding, Chemical, Aerospace, Power Plant, and Sugar Mills. Our offerings span various materials including cast gray or malleable iron, cast brass or bronze, as well as forged alloy and carbon steel, catering to your specific needs.",
     text2: "As the foremost supplier, dealer, and stockist of screwed fittings in India, Maruti Steel Alloys is your trusted partner. Our screwed fittings come in a variety of sizes, shapes, and grades, meeting diverse industrial needs. Covering major Indian cities and over twenty states, our distribution network ensures wide accessibility. Our exceptional range includes grades like ASME B16.11 and ASME B16.9, setting us apart as industry leaders.",
@@ -659,7 +669,7 @@ export const ThreadedPipeFittingsData={
 export const SocketWeldPipeFittingsData={
     
     name: "SOCKET WELD PIPE FITTINGS",
-    img: require("./Images/PipeFitting/Bgimg1.jpg"),
+    ogImg:'/Images/PipeFitting/Bgimg1.jpg',
     text1: "At Maruti Steel alloys, we proudly hold the position of a leading supplier, exporter, and stockist of socket weld fittings in India. Renowned for delivering unparalleled quality, our socket weld fittings stand out for their corrosion resistance, durability, and exceptional heat tolerance. These fittings find their applications across diverse industries, including Shipbuilding, Chemical, Aerospace, Power Plant, and Sugar Mills. We supply a wide range of socket weld fittings crafted from forged carbon steel, stainless steel, and nickel alloy, catering to your specific needs.",
     text2: "As the foremost supplier, dealer, and stockist of socket weld fittings in India, Maruti Steel alloy takes pride in our diverse offerings. Our socket weld fittings are available in a range of sizes, shapes, and grades, catering to various industrial requirements. Our distribution network spans major Indian cities and extends to over twenty states, ensuring widespread availability. Setting ourselves apart, we offer an array of grades including ASME B16.11, MSS SP 75, MSS SP 83, and MSS SP 95, solidifying our position as industry leaders.",
     text3: "At Maruti Steel alloys, every socket weld fitting we supply adheres to both national and international quality standards. To ensure the utmost quality, our team of skilled professionals rigorously subjects each fitting to a meticulous testing process.",
@@ -714,6 +724,7 @@ export const SocketWeldPipeFittingsData={
 export const DairyFittings={
     
   name: "Dairy Fittings",
+  ogImg:"/Images/ProductMain/dairyFittings/img.jpg",
   img: require("./Images/ProductMain/dairyFittings/img.jpg"),
   text1: "Maruti Steel Alloys is honored to stand as a foremost provider, exporter, and stockist of premium-grade dairy fittings within India. Our standing rests on our commitment to delivering unrivaled quality, as our dairy fittings have gained acclaim for their exceptional resistance to corrosion, remarkable durability, and heightened capacity to withstand extreme heat. These fittings find utility across a diverse array of industries, including Shipbuilding, Chemical, Aerospace, Power Plant, and Sugar Mills. Our comprehensive selection of proper dairy fittings is meticulously fashioned from forged carbon steel, stainless steel, and nickel alloy, all customized to impeccably align with your specific demands.",
   text2: "Maruti Steel Alloys holds a preeminent stance as a supplier, dealer, and stockist of exceptional dairy fittings across India. Our dedication reflects in the breadth of our offerings, with dairy fittings encompassing an array of sizes, shapes, and grades meticulously tailored to diverse industrial requisites. Our distribution network is widespread, encompassing key Indian cities and spanning across more than twenty states, ensuring unfaltering availability. What sets us apart is the spectrum of grades we provide, which includes ASME B16.11, MSS SP 75, MSS SP 83, and MSS SP 95, further solidifying our standing as trailblazers in the industry.",
@@ -789,6 +800,7 @@ export const DairyFittings={
 }
 export const StainlessSteel={
     name: "Stainless Steel",
+    ogImg:"/Images/ProductMain/stainlesssteel/img1.jpg",
     img: require("./Images/ProductMain/stainlesssteel/img1.jpg"),
     text1: "Maruti Steel alloy stands at the forefront as a distinguished supplier, exporter, and stockist of Stainless Steel Products in India. Renowned for delivering unmatched quality, our Stainless Steel Products excel in corrosion resistance, durability, and exceptional heat tolerance. These products find wide-ranging applications across industries such as Shipbuilding, Chemical, Aerospace, Power Plant, and Sugar Mills, among others.",
     text2: "Our forte lies in supplying an array of stainless steel products, including Stainless Steel Pipes, Stainless Steel Tubes, Stainless Steel Pipe Fittings, Stainless Steel Flanges, Stainless Steel Socketweld Fittings, Stainless Steel Screwed Fittings, Stainless Steel Fasteners, Stainless Steel Valves, and much more. At  Maruti Steel alloys, we provide a comprehensive range that caters to a multitude of applications across various industries.",
@@ -839,6 +851,7 @@ export const StainlessSteel={
 
 export const CarbonSteel ={
     name: "Carbon Steel",
+    ogImg:"/Images/ProductMain/carbonSteel/img1.webp",
     img: require("./Images/ProductMain/carbonSteel/img1.webp"),
     text1: " Maruti Steel alloys stands as a prominent supplier, exporter, and stockist of Carbon Steel Products in India. Renowned for delivering unparalleled quality, our Carbon Steel Products exhibit corrosion resistance, durability, and exceptional heat resistance. Widely applied across industries such as Shipbuilding, Chemical, Aerospace, Power Plant, and Sugar Mills, our products meet the highest standards of performance.",
     text2: "Our specialty lies in offering an extensive range of carbon steel products, including Carbon Steel Pipes, Carbon Steel Tubes, Carbon Steel Pipe Fittings, Carbon Steel Flanges, Carbon Steel Socketweld Fittings, Carbon Steel Screwed Fittings, Carbon Steel Fasteners, Carbon Steel Valves, and more. At Maruti Steel Alloys, we deliver a comprehensive selection to meet diverse industrial requirements with utmost precision and reliability.",

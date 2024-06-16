@@ -56,7 +56,6 @@ const [openSearch, setOpenSearch] = useState(false);
   }
   const showSearchtDrawer=()=>{
     setOpenSearch(true);
-
   }
   const data=[
     {
