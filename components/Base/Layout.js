@@ -42,8 +42,6 @@ const Layout = ({children}) => {
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Maruti Steel Alloys" />
-
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Maruti Steel Alloys- Comprehensive Range of Stainless Steel Products" />
     <meta name="twitter:description" content="Maruti steel alloys is the most acclaimed manufacturer, exporter, distributor and supplier of industrial Tubing, Pipe, Bar, Round Bar, Bright Finish Bar, dairy fittings, pipe fittings with required test certificates, pipe supplier in Mumbai, tube stockist in Pune, stainless steel pipe supplier, stainless steel tube stockist, buttweld fittings supplier in Rajkot, flanges stockist in Gujarat, socketweld fittings exporter in UAE, screwed fittings supplier in India, fasteners supplier in India, valves stockist & supplier in India" />
