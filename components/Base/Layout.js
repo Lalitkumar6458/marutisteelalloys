@@ -4,7 +4,6 @@ import Footer from './Footer'
 import TopInfo from './TopInfo'
 import ScrollTop from './ScrollTop'
 import Whatsappbtn from './Whatsappbtn'
-import Head from 'next/head'
 const Layout = ({children}) => {
   const [showTopBar, setShowTopBar] = useState(false);
   useEffect(() => {
