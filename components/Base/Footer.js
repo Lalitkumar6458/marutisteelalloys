@@ -171,9 +171,9 @@ const list3=[
    </div>
    <ul>
    {
-    list2.map((item)=>{
+    list2.map((item,index)=>{
       return(
-        <li className=' hover:translate-x-5 transition-all duration-700 hover:text-mainRed'><Link href={item.link} className='flex items-center gap-2 font-Oswald mb-1'><FaAngleDoubleRight/> {item.name}</Link></li>
+        <li key={index} className=' hover:translate-x-5 transition-all duration-700 hover:text-mainRed'><Link href={item.link} className='flex items-center gap-2 font-Oswald mb-1'><FaAngleDoubleRight/> {item.name}</Link></li>
       )
     })
    }
@@ -187,9 +187,9 @@ const list3=[
    </div>
    <ul>
    {
-    list3.map((item)=>{
+    list3.map((item,index)=>{
       return(
-        <li className=' hover:translate-x-5 transition-all duration-700 hover:text-mainRed'><Link href={item.link} className='flex items-center gap-2 font-Oswald mb-1'><FaAngleDoubleRight/> {item.name}</Link></li>
+        <li key={index} className=' hover:translate-x-5 transition-all duration-700 hover:text-mainRed'><Link href={item.link} className='flex items-center gap-2 font-Oswald mb-1'><FaAngleDoubleRight/> {item.name}</Link></li>
       )
     })
    }
@@ -203,9 +203,9 @@ const list3=[
    </div>
    <ul>
    {
-    list1.map((item)=>{
+    list1.map((item,index)=>{
       return(
-        <li className=' hover:translate-x-5 transition-all duration-700 hover:text-mainRed'><Link href={item.link} className='flex items-center gap-2 font-Oswald mb-1'><FaAngleDoubleRight/> {item.name}</Link></li>
+        <li key={index} className=' hover:translate-x-5 transition-all duration-700 hover:text-mainRed'><Link href={item.link} className='flex items-center gap-2 font-Oswald mb-1'><FaAngleDoubleRight/> {item.name}</Link></li>
       )
     })
    }

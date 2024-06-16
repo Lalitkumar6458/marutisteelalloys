@@ -58,7 +58,7 @@ const HeroSection = () => {
         
         {
             id:4,
-            text:<sapn>Reliable Fasteners Supplier for <br className='hidden md:block'/> Your Every Need</sapn>,
+            text:<span>Reliable Fasteners Supplier for <br className='hidden md:block'/> Your Every Need</span>,
             desc:"As a trusted fasteners supplier, we offer a comprehensive range of top-quality fastening solutions to meet your diverse requirements with precision and excellence.",
             img:require("../../public/Images/HomeImg/Fasteners.jpg"),
             
@@ -100,7 +100,7 @@ const HeroSection = () => {
       >
         {slideData.map((item, index) => {
           return (
-            <div className="h-[calc(100vh-110px)] w-full bg-dark-cl relative flex items-center justify-center px-[5%]">
+            <div className="h-[calc(100vh-110px)] w-full bg-dark-cl relative flex items-center justify-center px-[5%]" key={index}>
               <div className=" w-full left-0 right-0 top-0 absolute h-full">
                 <Image
                   className="h-full w-full object-cover"

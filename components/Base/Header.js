@@ -328,7 +328,7 @@ const [openSearch, setOpenSearch] = useState(false);
           <ul>
             {data.map((item, index) => {
               return (
-                <li className=" text-[1.2rem] pb-[10px] font-Roboto font-medium">
+                <li key={index} className=" text-[1.2rem] pb-[10px] font-Roboto font-medium">
                   <div className="flex items-center" key={item.name}>
                     <Link href={item.link}>{item.name}</Link>
                     {item.submenu ? (
@@ -353,7 +353,7 @@ const [openSearch, setOpenSearch] = useState(false);
                     >
                       {item.submenu.map((item, index) => {
                         return (
-                          <li className="px-2 py-2" key={item.name}>
+                          <li  className="px-2 py-2" key={item.name}>
                             <div className="flex items-center">
                               <Link href={item.link}>{item.name}</Link>
                               {item.submenu ? (
